@@ -1,0 +1,72 @@
+@import "fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply text-right font-["iranSans"];
+        direction: rtl;
+    }
+
+    /* VARIABLES COLOR IN LIGHT MODE */
+    html {
+
+        --color-white: 255 255 255;
+        --color-black: 0 0 0;
+
+
+        /* PRIMARY */
+        --color-primary: 53 57 94;
+        --color-primary-alpha: 127 130 161;
+        --color-primary-beta: 172 175 199;
+        --color-primary-gamma: 226 228 240;
+        --color-primary-tetha: 240 241 249;
+
+        /* SUCCESS */
+        --color-success: 10 198 36;
+        --color-success-alpha: 218 247 222;
+
+        /* WARNING */
+        --color-warning: 255 214 0;
+
+        /* DANGER */
+        --color-danger: 249 75 75;
+        --color-danger-alpha: 255 237 237;
+    }
+
+    /* GENERIC STYLE TX */
+    .tx {
+        @apply font-normal text-primary
+    }
+}
+
+@layer utilities {
+
+    /* SIZES TX */
+    .tx-xl {
+        @apply text-xl
+    }
+
+    .tx-lg {
+        @apply text-lg
+    }
+
+    .tx-md {
+        @apply text-md
+    }
+
+    .tx-base {
+        @apply text-base
+    }
+
+    .tx-sm {
+        @apply text-sm
+    }
+
+    .tx-xs {
+        @apply text-xs
+    }
+
+}
