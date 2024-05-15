@@ -41,11 +41,22 @@
     }
 
     .mb-between-section{
-        @apply mb-20
+        @apply mb-[70px]
     }
 
     .mt-between-section{
-        @apply mt-16
+        @apply mt-[70px]
+    }
+
+
+    .py-between-section{
+        @apply py-[70px]
+    }
+    .pb-between-section{
+        @apply pb-[70px]
+    }
+    .pt-between-section{
+        @apply pt-[70px]
     }
 }
 
