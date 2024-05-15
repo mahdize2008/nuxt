@@ -52,6 +52,10 @@ export default {
       md: '18px',
       lg: '20px',
       xl: '22px',
+      '2xl': '24px',
+      '3xl': '26px',
+      '4xl': '28px',
+      '5xl': '30px',
     },
     borderRadius: {
       'none': '0',
