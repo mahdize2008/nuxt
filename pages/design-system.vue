@@ -26,16 +26,28 @@ let paginationItems=[
 
     <div class="container mt-between-section mb-between-section">
         <div class="flex items-start flex-wrap mb-3 last:mb-0">
-            <div class="box-color w-16 h-16 ml-1.5" v-for="color in colors1" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+            <div v-for="color in colors1" class="ml-4 flex flex-col items-center">
+                <div class="box-color w-16 h-16" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+                {{ color }}
+            </div>
         </div>
         <div class="flex items-start flex-wrap mb-3 last:mb-0">
-            <div class="box-color w-16 h-16 ml-1.5" v-for="color in colors2" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+            <div v-for="color in colors2" class="ml-4 flex flex-col items-center">
+                <div class="box-color w-16 h-16" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+                {{ color }}
+            </div>
         </div>
         <div class="flex items-start flex-wrap mb-3 last:mb-0">
-            <div class="box-color w-16 h-16 ml-1.5" v-for="color in colors3" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+            <div v-for="color in colors3" class="ml-4 flex flex-col items-center">
+                <div class="box-color w-16 h-16" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+                {{ color }}
+            </div>
         </div>
         <div class="flex items-start flex-wrap mb-3 last:mb-0">
-            <div class="box-color w-16 h-16 ml-1.5" v-for="color in colors4" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+            <div v-for="color in colors4" class="ml-4 flex flex-col items-center">
+                <div class="box-color w-16 h-16" :class="'box-'+color" :style="`--color:var(--color-${color})`"></div>
+                {{ color }}
+            </div>
         </div>
     </div>
 
