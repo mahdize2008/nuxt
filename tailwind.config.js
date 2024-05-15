@@ -10,13 +10,21 @@ export default {
     "./app.vue",
   ],
   theme: {
+    screens: {
+      'sm': '576px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1200px',
+      '2xl': '1500px',
+      '3xl': '1920px',
+    },
     container: {
       center: true,
     },
     colors: {
       transparent: 'transparent',
 
-      
+
       white: 'rgb(var(--color-white) / <alpha-value>)',
       black: 'rgb(var(--color-black) / <alpha-value>)',
 
@@ -44,6 +52,17 @@ export default {
       md: '18px',
       lg: '20px',
       xl: '22px',
+    },
+    borderRadius: {
+      'none': '0',
+      DEFAULT: '1px',
+      'xs': '2px',
+      'sm': '4px',
+      'md': '6px',
+      'lg': '8px',
+      'xl': '10px',
+      '2xl': '12px',
+      'full': '9999px',
     },
     extend: {
       backgroundImage: {

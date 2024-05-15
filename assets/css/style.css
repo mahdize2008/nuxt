@@ -1,4 +1,5 @@
-@import "fonts.css";
+@import "/assets/css/public/fonts.css";
+@import "/assets/css/public/font-icons.css";
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +13,6 @@
 
     /* VARIABLES COLOR IN LIGHT MODE */
     html {
-
         --color-white: 255 255 255;
         --color-black: 0 0 0;
 
@@ -39,6 +39,14 @@
     /* GENERIC STYLE TX */
     .tx {
         @apply font-normal text-primary
+    }
+
+    .mb-between-section{
+        @apply mb-20
+    }
+
+    .mt-between-section{
+        @apply mt-16
     }
 }
 
