@@ -30,7 +30,7 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
     },
     theme: {
         type: String,
-        default: ''
+        default: 'primary'
     },
     lightness: {
         type: Boolean,
