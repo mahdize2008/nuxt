@@ -23,7 +23,6 @@ let paginationItems=[
 
 </script>
 <template>
-
     <div class="container mt-between-section mb-between-section">
         <div class="flex items-start flex-wrap mb-3 last:mb-0">
             <div v-for="color in colors1" class="ml-4 flex flex-col items-center">

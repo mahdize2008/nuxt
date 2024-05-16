@@ -2,7 +2,10 @@
 let { tagName, iconName, title, size, rounded, square, gradient, theme, lightness } = defineProps({
     tagName: {
         type: String,
-        default: 'button'
+        default: 'button',
+        validator: (value) => {
+            return ['div', 'a', 'NuxtLink', 'button'].includes(value);
+        },
     },
     iconName: {
         type: String,
@@ -14,7 +17,10 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
     },
     size: {
         type: String,
-        default: 'small'
+        default: 'base',
+        validator: (value) => {
+            return ['sm', 'base'].includes(value);
+        },
     },
     rounded: {
         type: Boolean,
@@ -30,7 +36,10 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
     },
     theme: {
         type: String,
-        default: 'primary'
+        default: 'primary',
+        validator: (value) => {
+            return ['primary', 'success'].includes(value);
+        },
     },
     lightness: {
         type: Boolean,
@@ -53,7 +62,7 @@ function setMode() {
     <component :is="tagName" class="btn"
         :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
         <GenericIcon v-if="iconName" size="sm" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
-        <slot/>
+        <slot />
     </component>
 </template>
 

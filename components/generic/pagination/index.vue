@@ -2,7 +2,7 @@
     let {items}=defineProps({
         items:{
             type:Array,
-            default:[]
+            default:[],
         }
     })
 </script>

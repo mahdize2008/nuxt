@@ -6,7 +6,10 @@ let { name ,size ,pathCount } = defineProps({
     },
     size: {
         type: String,
-        default: 'lg'
+        default: 'lg',
+        validator: (value) => {
+            return ['sm', 'base', 'lg'].includes(value);
+        },
     },
     pathCount: {
         type: Number,
