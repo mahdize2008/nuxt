@@ -15,8 +15,7 @@ export default {
       'md': '768px',
       'lg': '992px',
       'xl': '1200px',
-      '2xl': '1500px',
-      '3xl': '1920px',
+      '2xl': '1420px',
     },
     container: {
       center: true,
@@ -46,6 +45,7 @@ export default {
 
     },
     fontSize: {
+      '2xs': '10px',
       xs: '12px',
       sm: '14px',
       base: '16px',
@@ -66,7 +66,12 @@ export default {
       'lg': '8px',
       'xl': '10px',
       '2xl': '12px',
+      '3xl': '14px',
+      '4xl': '16px',
       'full': '9999px',
+    },
+    boxShadow: {
+      'hover': '0px 15px 60px 0px #E5E6F3',
     },
     extend: {
       backgroundImage: {

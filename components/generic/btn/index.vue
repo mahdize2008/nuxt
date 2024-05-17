@@ -69,7 +69,7 @@ function setMode() {
 <style scoped>
 /* GENERIC-STYLE */
 .btn {
-    @apply flex items-center justify-center bg-primary h-[45px] px-16 text-xs text-white font-medium cursor-pointer rounded-lg
+    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-16 text-xs text-white font-medium cursor-pointer rounded-lg
 }
 
 

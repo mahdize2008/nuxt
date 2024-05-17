@@ -4,5 +4,5 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
   ],
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"]
+  modules: ["@nuxtjs/tailwindcss",'nuxt-swiper']
 })
