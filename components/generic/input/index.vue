@@ -25,7 +25,7 @@ let {label,error,errorMassage,disabled,placeholder}=defineProps({
 let inputValue=''
 </script>
 <template>
-    <div class="v-input-wrapper" :class="{'v-input-wrapper-error' : error}">
+    <div class="v-input-wrapper" :class="[{'v-input-wrapper-error' : error},{'disabled':disabled}]">
         <label class="v-input-label">{{ label }}</label>
         <input type="text" :disabled="disabled" v-model="inputValue" :placeholder="placeholder" class="v-input tx-xs">
         <div class="v-input-err tx-xs" v-if="error">
@@ -42,7 +42,7 @@ let inputValue=''
 .v-input-wrapper-error .v-input{
     @apply !border-danger;
 }
-.v-input:disabled{
+.v-input-wrapper.disabled .v-input{
     @apply bg-primary-tetha border-primary-tetha;
 }
 .v-input-label{

@@ -1,10 +1,10 @@
 <script setup>
-let { backgroundImgSrc, logoSrc, name, descriptoin, category, moded, point, particular } = defineProps({
-    backgroundImgSrc: {
+let { bgImg, img, name, description, category, isMode, rate, isOnline, hasShild, to } = defineProps({
+    bgImg: {
         type: String,
         default: ''
     },
-    logoSrc: {
+    img: {
         type: String,
         default: ''
     },
@@ -12,7 +12,7 @@ let { backgroundImgSrc, logoSrc, name, descriptoin, category, moded, point, part
         type: String,
         default: ''
     },
-    descriptoin: {
+    description: {
         type: String,
         default: ''
     },
@@ -20,15 +20,19 @@ let { backgroundImgSrc, logoSrc, name, descriptoin, category, moded, point, part
         type: String,
         default: ''
     },
-    moded: {
+    isMode: {
         type: Boolean,
         default: false
     },
-    point: {
+    rate: {
         type: Number,
         default: 0
     },
-    particular: {
+    isOnline: {
+        type: Boolean,
+        default: false
+    },
+    hasShild: {
         type: Boolean,
         default: false
     },
@@ -40,65 +44,29 @@ let { backgroundImgSrc, logoSrc, name, descriptoin, category, moded, point, part
 </script>
 
 <template>
-    <NuxtLink :to="to" class="v-card">
-        <img :src="backgroundImgSrc" class="v-card-background">
-        <div class="v-card-body">
-            <!-- <div v-if="particular" class="v-card-particular">
-                <GenericIcon name="signal" :pathCount="3" size="sm" />
-            </div> -->
-            <img :src="logoSrc" class="v-card-logo" alt="">
+    <NuxtLink :to="to" class="h-[320px] w-full rounded-4xl overflow-hidden relative flex items-end p-3">
+        <img :src="bgImg" class="absolute top-0 right-0 w-full h-full object-cover object-top">
+        <div class="rounded-lg bg-primary-beler p-4 relative z-10 w-full flex items-center">
+            <GenericOnline v-if="isOnline" />
+            <img :src="img" class="w-[75px] h-[75px] rounded-lg ml-4" alt="">
             <div class="w-full">
-                <h2 class="v-card-name tx-base">
+                <h2 class="text-white mb-1 line-clamp-1 tx-base">
                     {{ name }}
                 </h2>
-                <p class="v-card-description tx-xs">
-                    {{ descriptoin }}
+                <p class="text-white/70 mb-0.5 line-clamp-1 tx-xs">
+                    {{ description }}
                 </p>
-                <div class="v-card-option tx-xs">
-                    <GenericParticular v-if="particular" :point="point" class="mr-auto" />
-                    <span class="block" :class="{'mr-2':particular}">
+                <div class="flex items-end text-white tx-xs">
+                    <GenericIcon v-if="hasShild" name="shield_chek" class="text-success text-lg ml-2" />
+                    <span class="block">
                         {{ category }}
                     </span>
-                    <span v-if="moded" class="v-card-tag">
+                    <span v-if="isMode" class="bg-black/50 py-0.5 block text-white rounded-full px-2 mr-2">
                         مود شده
                     </span>
-                    <GenericPoint :point="point" class="mr-auto" />
+                    <GenericRating :rate="rate" class="mr-auto" />
                 </div>
             </div>
         </div>
     </NuxtLink>
 </template>
-
-<style scoped>
-.v-card {
-    @apply h-[320px] w-full rounded-4xl overflow-hidden relative flex items-end p-3;
-}
-
-.v-card-background {
-    @apply absolute top-1/2 -translate-y-1/2 right-0 min-w-full min-h-full object-cover
-}
-
-.v-card-body {
-    @apply rounded-lg bg-primary/70 p-4 relative z-10 w-full border-white border backdrop-blur-xl flex items-center
-}
-
-.v-card-logo {
-    @apply w-[75px] h-[75px] rounded-lg ml-4
-}
-
-.v-card-name {
-    @apply text-white mb-1 line-clamp-1
-}
-
-.v-card-description {
-    @apply text-white/70 mb-0.5 line-clamp-1
-}
-
-.v-card-option {
-    @apply flex items-center text-white
-}
-
-.v-card-tag {
-    @apply bg-black/50 py-0.5 block text-white rounded-full px-2 mr-2
-}
-</style>

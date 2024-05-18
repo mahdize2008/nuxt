@@ -1,10 +1,10 @@
 <script setup>
-let { teaserSrc, logoSrc, name, descriptoin, point, particular } = defineProps({
-    teaserSrc: {
+let { bgImg, img, name, description, rate, isOnline, to } = defineProps({
+    bgImg: {
         type: String,
         default: ''
     },
-    logoSrc: {
+    img: {
         type: String,
         default: ''
     },
@@ -12,15 +12,15 @@ let { teaserSrc, logoSrc, name, descriptoin, point, particular } = defineProps({
         type: String,
         default: ''
     },
-    descriptoin: {
+    description: {
         type: String,
         default: ''
     },
-    point: {
+    rate: {
         type: Number,
         default: 0
     },
-    particular: {
+    isOnline: {
         type: Boolean,
         default: false
     },
@@ -33,53 +33,21 @@ let { teaserSrc, logoSrc, name, descriptoin, point, particular } = defineProps({
 
 
 <template>
-    <NuxtLink class="v-card" :to="to">
-        <div class="v-card-teaser">
-            <img :src="teaserSrc" class="v-card-teaser-img">
-        </div>
-        <div class="v-card-body">
-            <!-- <div v-if="particular" class="v-card-particular">
-                <GenericIcon name="signal" :pathCount="3" size="sm" />
-            </div> -->
-            <img :src="logoSrc" class="v-card-logo" alt="">
+    <NuxtLink class="w-full group block relative" :to="to">
+        <!-- <div class="h-[175px] overflow-hidden"> -->
+            <img :src="bgImg" class="h-[175px] w-full rounded-4xl object-top object-cover">
+        <!-- </div> -->
+        <div class="rounded-lg relative z-10 w-full flex items-end px-4 -mt-5">
+            <img :src="img" class="w-[75px] h-[75px] rounded-lg ml-4" alt="">
             <div class="w-full">
-                <h2 class="v-card-name tx-xs">
+                <h2 class="text-primary mb-1 line-clamp-1 font-semibold tx-xs group-hover:text-success">
                     {{ name }}
                 </h2>
-                <p class="v-card-description tx-xs">
-                    {{ descriptoin }}
+                <p class="text-primary-beta line-clamp-1 leading-none tx-xs">
+                    {{ description }}
                 </p>
             </div>
-            <GenericPoint dark :point="point" class="mr-auto" />
+            <GenericRating dark :rate="rate" class="mr-auto" />
         </div>
     </NuxtLink>
 </template>
-
-<style scoped>
-.v-card {
-    @apply w-full block relative;
-}
-/*  */
-.v-card-teaser {
-    @apply w-full h-[175px] rounded-4xl overflow-hidden
-}
-.v-card-teaser-img {
-    @apply w-fit h-fit object-contain
-}
-
-.v-card-body {
-    @apply rounded-lg relative z-10 w-full flex items-end px-4 -mt-5
-}
-
-.v-card-logo {
-    @apply w-[75px] h-[75px] rounded-lg ml-4
-}
-
-.v-card-name {
-    @apply text-primary mb-1 line-clamp-1 font-semibold
-}
-
-.v-card-description {
-    @apply text-primary-beta line-clamp-1 leading-none
-}
-</style>

@@ -21,6 +21,7 @@
         --color-primary-beta: 172 175 199;
         --color-primary-gamma: 226 228 240;
         --color-primary-tetha: 240 241 249;
+        --color-primary-landa: 34 37 67;
 
         /* SUCCESS */
         --color-success: 10 198 36;
@@ -32,6 +33,14 @@
         /* DANGER */
         --color-danger: 249 75 75;
         --color-danger-alpha: 255 237 237;
+    }
+
+    button{
+        border: none;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     /* GENERIC STYLE TX */
@@ -56,6 +65,11 @@
     }
     .pt-between-section{
         @apply pt-[70px]
+    }
+
+
+    .bg-primary-beler{
+        @apply bg-primary-landa/70 border border-white/20 backdrop-blur-xl
     }
 }
 

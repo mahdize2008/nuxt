@@ -27,7 +27,7 @@
 }
 
 i {
-    @apply relative;
+    @apply relative !block;
 }
 
 i span[class*='path'] {
@@ -38,6 +38,9 @@ i .path1 {
     @apply !relative
 }
 
+.icon-play:before {
+  content: "\e900";
+}
 .icon-game:before {
   content: "\e938";
 }

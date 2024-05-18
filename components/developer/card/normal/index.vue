@@ -1,6 +1,6 @@
 <script setup>
-let { logoSrc, name, descriptoin, to, gradientFrom, gradientTo } = defineProps({
-    logoSrc: {
+let { img, name, description, to, gradient } = defineProps({
+    img: {
         type: String,
         default: ''
     },
@@ -8,7 +8,7 @@ let { logoSrc, name, descriptoin, to, gradientFrom, gradientTo } = defineProps({
         type: String,
         default: ''
     },
-    descriptoin: {
+    description: {
         type: String,
         default: ''
     },
@@ -16,45 +16,24 @@ let { logoSrc, name, descriptoin, to, gradientFrom, gradientTo } = defineProps({
         type: String,
         default: ''
     },
-    gradientFrom: {
-        type: String,
-        default: ''
-    },
-    gradientTo: {
-        type: String,
-        default: ''
+    gradient: {
+        type: Object,
+        default: []
     }
 })
 </script>
 
 
 <template>
-    <NuxtLink class="v-card" :style="[`--gradient-from:${gradientFrom}`, `--gradient-to:${gradientTo}`]" :to="to">
-        <img src="/img/brand.png" class="v-card-brand" alt="">
+    <NuxtLink class="block" :to="to">
+        <div class="v-card flex items-center justify-center h-[120px] w-full p-4 rounded-4xl mb-4" :style="`background:linear-gradient(180deg ,${gradient.from} 0%,${gradient.to} 100%)`">
+            <img src="/img/brand.png" class="max-w-full max-h-full" alt="">
+        </div>
+        <h2 class="text-primary mb-1 line-clamp-1 font-semibold text-center tx-xs" :to="to">
+            {{ name }}
+        </h2>
+        <p class="text-primary-beta line-clamp-1 leading-none text-center tx-xs">
+            {{ description }}
+        </p>
     </NuxtLink>
-    <NuxtLink class="v-card-name tx-xs" :to="to">
-        {{ name }}
-    </NuxtLink>
-    <p class="v-card-description tx-xs">
-        {{ descriptoin }}
-    </p>
 </template>
-
-<style scoped>
-.v-card {
-    @apply flex items-center justify-center h-[120px] w-full p-4 rounded-4xl mb-4;
-    background: linear-gradient(180deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
-}
-
-.v-card-brand {
-    @apply max-w-full max-h-full
-}
-
-.v-card-name {
-    @apply text-primary mb-1 line-clamp-1 font-semibold text-center
-}
-
-.v-card-description {
-    @apply text-primary-beta line-clamp-1 leading-none text-center
-}
-</style>

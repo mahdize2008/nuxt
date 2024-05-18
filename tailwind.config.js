@@ -33,6 +33,7 @@ export default {
       'primary-beta': 'rgb(var(--color-primary-beta) / <alpha-value>)',
       'primary-gamma': 'rgb(var(--color-primary-gamma) / <alpha-value>)',
       'primary-tetha': 'rgb(var(--color-primary-tetha) / <alpha-value>)',
+      'primary-landa': 'rgb(var(--color-primary-landa) / <alpha-value>)',
 
 
       success: 'rgb(var(--color-success) / <alpha-value>)',
@@ -56,6 +57,7 @@ export default {
       '3xl': '26px',
       '4xl': '28px',
       '5xl': '30px',
+      '15xl': '50px',
     },
     borderRadius: {
       'none': '0',

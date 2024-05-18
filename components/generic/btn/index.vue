@@ -1,5 +1,5 @@
 <script setup>
-let { tagName, iconName, title, size, rounded, square, gradient, theme, lightness } = defineProps({
+let { tagName, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to } = defineProps({
     tagName: {
         type: String,
         default: 'button',
@@ -8,10 +8,6 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
         },
     },
     iconName: {
-        type: String,
-        default: ''
-    },
-    title: {
         type: String,
         default: ''
     },
@@ -34,6 +30,10 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
         type: Boolean,
         default: false
     },
+    iconPathCount: {
+        type: Number,
+        default: 0
+    },
     theme: {
         type: String,
         default: 'primary',
@@ -44,6 +44,10 @@ let { tagName, iconName, title, size, rounded, square, gradient, theme, lightnes
     lightness: {
         type: Boolean,
         default: false
+    },
+    to: {
+        type: String,
+        default: ''
     }
 
 })
@@ -53,15 +57,13 @@ function setMode() {
     }
     else if (theme) {
         return `btn-${theme}`;
-    } else {
-        return;
     }
 }
 </script>
 <template>
-    <component :is="tagName" class="btn"
+    <component :is="tagName" class="btn" :to="to"
         :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
-        <GenericIcon v-if="iconName" size="sm" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
+        <GenericIcon v-if="iconName" :pathCount="iconPathCount" class="text-md" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
         <slot />
     </component>
 </template>
@@ -69,7 +71,7 @@ function setMode() {
 <style scoped>
 /* GENERIC-STYLE */
 .btn {
-    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-16 text-xs text-white font-medium cursor-pointer rounded-lg
+    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-xs text-white font-medium cursor-pointer rounded-lg
 }
 
 
@@ -84,21 +86,21 @@ function setMode() {
     @apply !bg-success !text-white
 }
 
-.btn-primary.btn-lightness {
+.btn.btn-primary.btn-lightness {
     @apply !bg-primary-tetha !text-primary
 }
 
-.btn-success.btn-lightness {
+.btn.btn-success.btn-lightness {
     @apply !bg-success-alpha !text-success
 }
 
-.btn-gradient {
+.btn.btn-gradient {
     @apply !bg-success-gradient !text-white
 }
 
 
 /* BTN-SIZE */
-.btn-sm {
+.btn.btn-sm {
     @apply !h-[35px]
 }
 

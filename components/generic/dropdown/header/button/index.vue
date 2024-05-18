@@ -16,11 +16,11 @@
 </script>
 
 <template>
-    <div class="bg-primary-tetha py-2.5 px-4 tx-xs rounded-xl cursor-pointer font-semibold w-fit flex items-center ">
-        <GenericIcon :name="iconName" size="sm" :pathCount="iconPathCount"/>
-        <span class="mx-2 block">
+    <div class="bg-primary-tetha h-[45px] px-4 tx-xs rounded-xl cursor-pointer font-semibold w-fit flex items-center ">
+        <GenericIcon :name="iconName" class="text-xl" :pathCount="iconPathCount"/>
+        <span class="ml-3 mr-2 block">
             {{ title }}
         </span>
-        <GenericIcon name="down" size="xs" class="text-primary-beta"/>
+        <GenericIcon name="down" class="text-2xs text-primary-beta"/>
     </div>
 </template>
