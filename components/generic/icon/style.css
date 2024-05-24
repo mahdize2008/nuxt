@@ -38,8 +38,8 @@ i .path1 {
     @apply !relative
 }
 
-.icon-play:before {
-  content: "\e900";
+.icon-roidino:before {
+  content: "\e90f";
 }
 .icon-game:before {
   content: "\e938";
@@ -222,6 +222,9 @@ i .path1 {
 .icon-down:before {
   content: "\e923";
 }
-.icon-left1:before {
+.icon-left:before {
   content: "\e924";
+}
+.icon-play:before {
+  content: "\e900";
 }

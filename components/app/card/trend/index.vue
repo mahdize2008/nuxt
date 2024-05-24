@@ -34,9 +34,7 @@ let { bgImg, img, name, description, rate, isOnline, to } = defineProps({
 
 <template>
     <NuxtLink class="w-full group block relative" :to="to">
-        <!-- <div class="h-[175px] overflow-hidden"> -->
-            <img :src="bgImg" class="h-[175px] w-full rounded-4xl object-top object-cover">
-        <!-- </div> -->
+        <img :src="bgImg" class="h-[175px] w-full rounded-4xl object-top object-cover">
         <div class="rounded-lg relative z-10 w-full flex items-end px-4 -mt-5">
             <img :src="img" class="w-[75px] h-[75px] rounded-lg ml-4" alt="">
             <div class="w-full">

@@ -51,37 +51,66 @@ let paginationItems = [
     </div>
 
     <div class="container mb-between-section">
-        <GenericInput class="mb-7 last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" />
-        <GenericInput class="mb-7 last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" disabled />
-        <GenericInput class="mb-7 last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" />
-        <GenericInput class="mb-7 last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" error
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" />
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" disabled />
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" />
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" error
             errorMassage="پیغام مقدار نامعتبر" />
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی">
+            <template #right-side>
+                <GenericIcon name="search" class="text-xl ml-2" :pathCount="2"/>
+            </template>
+            <template #left-side>
+                <GenericIcon name="search" class="text-xl mr-2" :pathCount="2"/>
+            </template>
+        </GenericInput>
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" disabled>
+            <template #right-side>
+                <GenericIcon name="search" class="text-xl ml-2" :pathCount="2"/>
+            </template>
+        </GenericInput>
+        <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی">
+            <template #left-side>
+                <GenericIcon name="search" class="text-xl mr-2" :pathCount="2"/>
+            </template>
+        </GenericInput>
     </div>
 
     <div class="container mb-between-section">
         <div class="flex items-center mb-10">
             <span class="ml-5 block">45px</span>
-            <GenericBtn class="ml-5 last:ml-0 text-md" to="/design-system" theme="primary" rounded square iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md" to="/design-system" theme="primary" rounded lightness square iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md" to="/design-system" theme="success" rounded square iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md" to="/design-system" theme="primary" rounded lightness square iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md" to="/design-system" theme="success" rounded lightness square iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md !rounded-l-none" to="/design-system" theme="primary" rounded lightness square
-                iconName="star" />
-            <GenericBtn class="ml-5 last:ml-0 text-md !rounded-l-none" to="/design-system" theme="primary" rounded lightness square
-                iconName="star" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded lightness square
+                iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="success" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded lightness square
+                iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="success" rounded lightness square
+                iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+                square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-2xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+                square iconName="left" />
         </div>
         <div class="flex items-center mb-10">
             <span class="ml-5 block">35px</span>
-            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
         </div>
         <div class="flex items-center">
             <span class="ml-5 block">45px</span>
-            <GenericBtn to="/design-system" gradient rounded iconName="star" class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" gradient iconName="star" class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" gradient rounded class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" gradient class="ml-5 last:ml-0 text-md">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" gradient rounded iconName="star" class="ml-5 last:ml-0 !text-2xl">
+                <span class="tx-xs">
+                    نمونه دکمه
+                </span>
+            </GenericBtn>
+            <GenericBtn to="/design-system" gradient iconName="star" class="ml-5 last:ml-0 !text-2xl">
+                <span class="tx-xs">
+                    نمونه دکمه
+                </span>
+            </GenericBtn>
+            <GenericBtn to="/design-system" gradient rounded class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
         </div>
     </div>
 
@@ -142,23 +171,23 @@ let paginationItems = [
     </div>
 
     <div class="container mb-between-section">
-        <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline hasShild bgImg="/img/background-img-1.png"
+        <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline hasSield bgImg="/img/background-img-1.png"
             img="/img/logo-1.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <AppCardTrend to="/design-system" class="!w-[22%]" bgImg="/img/teaser.png" img="/img/logo-1.png"
-            name="کلش رویال" description="Clash Royale" :rate="5.1" />
+        <AppCardTrend to="/design-system" class="!w-[22%]" bgImg="/img/teaser.png" img="/img/logo-1.png" name="کلش رویال"
+            description="Clash Royale" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <AppCardNormal to="/design-system" class="!w-[13%]" isOnline hasShild bgImg="/img/background-img-1.png"
+        <AppCardNormal to="/design-system" class="!w-[13%]" isOnline hasSield bgImg="/img/background-img-1.png"
             img="/img/logo-2.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/logo-1.png" name="کلش رویال" description="Clash Royale"
-        :gradient="{from:'#FF1616',to:'#860000'}"/>
+        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/logo-1.png" name="کلش رویال"
+            description="Clash Royale" :gradient="{ from: '#FF1616', to: '#860000' }" />
     </div>
 
 
@@ -190,7 +219,26 @@ let paginationItems = [
         <GenericToolbarVertical to="/design-system" />
     </div>
 
+    <div class="container mb-between-section flex items-center">
+        <GenericLogo hasSubtitle/>
+    </div>
 
+    <div class="container mb-between-section flex items-center">
+        <SectionsOurFitcher hasLogo/>
+        <div class="flex mr-auto">
+            <GenericBtn class="!text-2xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+                square iconName="right" />
+            <GenericBtn class="!text-2xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+                square iconName="left" />
+        </div>
+    </div>
+
+    <div class="container mb-between-section flex items-center">
+        <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0" class="ml-4 !w-[27px] !h-[27px] last:ml-0 !text-sm" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="category" :iconPathCount="4" class="ml-4 last:ml-0 !text-lg" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl" lightness square rounded/>
+    </div>
 </template>
 
 <style lang="scss" scoped>

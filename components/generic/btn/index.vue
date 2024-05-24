@@ -1,6 +1,6 @@
 <script setup>
-let { tagName, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to } = defineProps({
-    tagName: {
+let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to } = defineProps({
+    tag: {
         type: String,
         default: 'button',
         validator: (value) => {
@@ -61,9 +61,9 @@ function setMode() {
 }
 </script>
 <template>
-    <component :is="tagName" class="btn" :to="to"
+    <component :is="tag" class="btn" :to="to"
         :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
-        <GenericIcon v-if="iconName" :pathCount="iconPathCount" class="text-md" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
+        <GenericIcon v-if="iconName" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
         <slot />
     </component>
 </template>
@@ -77,21 +77,24 @@ function setMode() {
 
 /* BTN-SQUARE */
 .btn.btn-square {
-    @apply !w-[45px] !h-[45px] !px-0
+    @apply w-[45px] h-[45px] !px-0
+}
+.btn.btn-sm.btn-square {
+    @apply w-[35px] h-[35px] !px-0
 }
 
 
 /* BTN-COLOR */
 .btn.btn-success {
-    @apply !bg-success !text-white
+    @apply bg-success text-white
 }
 
 .btn.btn-primary.btn-lightness {
-    @apply !bg-primary-tetha !text-primary
+    @apply bg-primary-tetha text-primary
 }
 
 .btn.btn-success.btn-lightness {
-    @apply !bg-success-alpha !text-success
+    @apply bg-success-alpha text-success
 }
 
 .btn.btn-gradient {
@@ -107,6 +110,6 @@ function setMode() {
 
 /* BTN-ROUNDED */
 .btn.btn-rounded {
-    @apply !rounded-full
+    @apply rounded-full
 }
 </style>
