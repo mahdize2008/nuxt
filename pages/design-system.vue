@@ -170,13 +170,15 @@ let paginationItems = [
         <GenericPagination :items="paginationItems" />
     </div>
 
+
+
     <div class="container mb-between-section">
         <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline hasSield bgImg="/img/background-img-1.png"
             img="/img/logo-1.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <AppCardTrend to="/design-system" class="!w-[22%]" bgImg="/img/teaser.png" img="/img/logo-1.png" name="کلش رویال"
+        <AppCardTrend class="!w-[22%]" to="/design-system" bgImg="/img/teaser.png" img="/img/logo-1.png" name="کلش رویال"
             description="Clash Royale" :rate="5.1" />
     </div>
 

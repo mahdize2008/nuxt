@@ -26,7 +26,7 @@ let inputValue=''
 </script>
 <template>
     <div class="v-input-wrapper" :class="[{'v-input-wrapper-error' : error},{'disabled':disabled}]">
-        <label class="v-input-label">{{ label }}</label>
+        <label v-if="label" class="v-input-label">{{ label }}</label>
         <div class="v-input-wrap">
             <slot name="right-side"/>
             <input type="text" :disabled="disabled" v-model="inputValue" :placeholder="placeholder" class="v-input tx-xs">

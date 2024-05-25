@@ -1,3 +1,4 @@
 <template>
+        <LayoutsHeader/>
     <slot/>
 </template>

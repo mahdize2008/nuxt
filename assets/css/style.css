@@ -71,6 +71,10 @@
     .bg-primary-beler{
         @apply bg-primary-landa/70 border border-white/20 backdrop-blur-xl
     }
+
+    .border-public-section{
+        @apply border-b-2 border-primary-tetha
+    }
 }
 
 @layer utilities {
