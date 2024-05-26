@@ -1,5 +1,5 @@
 <script setup>
-let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to } = defineProps({
+let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to , iconLeftSide } = defineProps({
     tag: {
         type: String,
         default: 'button',
@@ -45,6 +45,10 @@ let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, ligh
         type: Boolean,
         default: false
     },
+    iconLeftSide: {
+        type: Boolean,
+        default: false
+    },
     to: {
         type: String,
         default: ''
@@ -62,9 +66,10 @@ function setMode() {
 </script>
 <template>
     <component :is="tag" class="btn" :to="to"
-        :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
-        <GenericIcon v-if="iconName" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
+    :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
+        <GenericIcon v-if="iconName&&!iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
         <slot />
+        <GenericIcon v-if="iconName&&iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'mr-2': !square }"></GenericIcon>
     </component>
 </template>
 

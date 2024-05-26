@@ -225,6 +225,9 @@ i .path1 {
 .icon-left:before {
   content: "\e924";
 }
+.icon-download1:before {
+  content: "\e913";
+}
 .icon-play:before {
   content: "\e900";
 }

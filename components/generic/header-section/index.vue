@@ -21,8 +21,8 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
         default:''
     },
     iconPathCount:{
-        type:String,
-        default:''
+        type:Number,
+        default:0
     }
 })
 </script>

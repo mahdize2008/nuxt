@@ -72,8 +72,11 @@
         @apply bg-primary-landa/70 border border-white/20 backdrop-blur-xl
     }
 
-    .border-public-section{
+    .border-b-public-section{
         @apply border-b-2 border-primary-tetha
+    }
+    .border-py-public-section{
+        @apply border-y-2 border-primary-tetha
     }
 }
 

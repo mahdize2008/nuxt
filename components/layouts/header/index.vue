@@ -15,7 +15,7 @@ let dropdownItems2 = [
 ]
 </script>
 <template>
-    <header class="border-public-section">
+    <header class="border-b-public-section">
         <div class="container flex items-center py-7 ">
             <GenericLogo hasSubtitle class="ml-3.5" />
             <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0"

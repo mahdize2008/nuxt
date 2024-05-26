@@ -49,7 +49,6 @@ let paginationItems = [
             </div>
         </div>
     </div>
-
     <div class="container mb-between-section">
         <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" />
         <GenericInput class="mb-7 max-w-[295px] last:mb-0" label="لیبل فیلد" placeholder="حالت عادی" disabled />
@@ -75,7 +74,6 @@ let paginationItems = [
             </template>
         </GenericInput>
     </div>
-
     <div class="container mb-between-section">
         <div class="flex items-center mb-10">
             <span class="ml-5 block">45px</span>
@@ -113,7 +111,6 @@ let paginationItems = [
             <GenericBtn to="/design-system" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
         </div>
     </div>
-
     <div class="container mb-between-section">
         <div class="flex items-center">
             <span class="ml-5 tx-base block">
@@ -165,30 +162,32 @@ let paginationItems = [
         </div>
 
     </div>
-
     <div class="container mb-between-section">
         <GenericPagination :items="paginationItems" />
     </div>
 
 
 
+
+
+    
     <div class="container mb-between-section">
         <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline hasSield bgImg="/img/background-img-1.png"
-            img="/img/logo-1.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
+            img="/img/img-4.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <AppCardTrend class="!w-[22%]" to="/design-system" bgImg="/img/teaser.png" img="/img/logo-1.png" name="کلش رویال"
+        <AppCardTrend class="!w-[22%]" to="/design-system" bgImg="/img/teaser.png" img="/img/img-4.png" name="کلش رویال"
             description="Clash Royale" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
         <AppCardNormal to="/design-system" class="!w-[13%]" isOnline hasSield bgImg="/img/background-img-1.png"
-            img="/img/logo-2.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
+            img="/img/img-5.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
     <div class="container mb-between-section">
-        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/logo-1.png" name="کلش رویال"
+        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/img-4.png" name="کلش رویال"
             description="Clash Royale" :gradient="{ from: '#FF1616', to: '#860000' }" />
     </div>
 
@@ -201,13 +200,13 @@ let paginationItems = [
                 date="۲۰ فروردین ۱۴۰۳" />
         </div>
         <div class="w-[47%]">
-            <ArticleCardRow hasVideo to="/design-system" ImgSrc="/img/img-1.png"
+            <ArticleCardRow hasVideo to="/design-system" imgSrc="/img/img-1.png"
                 title="بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است " date="۲۰ فروردین ۱۴۰۳" />
-            <ArticleCardRow hasVideo to="/design-system" ImgSrc="/img/img-1.png"
+            <ArticleCardRow hasVideo to="/design-system" imgSrc="/img/img-1.png"
                 title="بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است " date="۲۰ فروردین ۱۴۰۳" />
-            <ArticleCardRow hasVideo to="/design-system" ImgSrc="/img/img-1.png"
+            <ArticleCardRow hasVideo to="/design-system" imgSrc="/img/img-1.png"
                 title="بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است " date="۲۰ فروردین ۱۴۰۳" />
-            <ArticleCardRow hasVideo to="/design-system" ImgSrc="/img/img-1.png"
+            <ArticleCardRow hasVideo to="/design-system" imgSrc="/img/img-1.png"
                 title="بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است " date="۲۰ فروردین ۱۴۰۳" />
         </div>
     </div>
