@@ -1,8 +1,3 @@
-
-import type { GenericIcon } from '#build/components';
-
-import type { GenericBtn } from '#build/components';
-
 <template>
     <div>
         <div class="py-[95px] flex flex-col items-center">

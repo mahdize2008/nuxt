@@ -177,7 +177,7 @@ let normalSliderItems = [
     }
 ]
 
-let partnersItems = [
+let companiesItems = [
     {
         to: "/design-system",
         img: "/img/img-4.png",
@@ -327,9 +327,9 @@ let accordionItems = [
                 class="mb-between-section last:!mb-0" />
         </div>
     </div>
-    <SectionsPartners :headerSection="{ title: 'توسعه دهنده‌های برتر', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
-        class="container mb-between-section" :items="partnersItems" />
-    <SectionsProposal class="container mb-between-section" :items="partnersItems" />
+    <SectionsCompany :headerSection="{ title: 'توسعه دهنده‌های برتر', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
+        class="container mb-between-section" :items="companiesItems" />
+    <SectionsProposal class="container mb-between-section" :items="companiesItems" />
     <SectionsAppSpacialArticle
         :headerSection="{ title: 'مجله رویدینو', subtitle: 'خبر، آموزش، مقاله و... با مجله رویدینو', link: '/' }"
         :items="articlesItems" class="mb-between-section" />

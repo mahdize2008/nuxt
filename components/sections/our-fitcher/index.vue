@@ -14,24 +14,24 @@ let { hasLogo }=defineProps({
         </div>
         <ul class="-m-4 flex items-center">
             <li class="p-4 flex items-center font-medium tx-xs text-primary">
-                <GenericIcon name="shield" :pathCount="4" class="text-xl ml-2"/>
+                <GenericIcon name="shield" :pathCount="4" class="text-3xl ml-2"/>
                 ترافیک نیم‌بها
             </li>
             <li class="p-4 flex items-center font-medium tx-xs text-primary">
-                <GenericIcon name="shield_checked" :pathCount="4" class="text-xl ml-2"/>
-                ترافیک نیم‌بها
+                <GenericIcon name="shield_checked" :pathCount="4" class="text-3xl ml-2"/>
+                سپر امنیتی رویدینو
             </li>
             <li class="p-4 flex items-center font-medium tx-xs text-primary">
-                <GenericIcon name="gamepad" :pathCount="4" class="text-xl ml-2"/>
-                ترافیک نیم‌بها
+                <GenericIcon name="gamepad" :pathCount="4" class="text-3xl ml-2"/>
+                نصب بازی‌های دیتادار
             </li>
             <li class="p-4 flex items-center font-medium tx-xs text-primary">
-                <GenericIcon name="diamond" :pathCount="4" class="text-xl ml-2"/>
-                ترافیک نیم‌بها
+                <GenericIcon name="diamond" :pathCount="4" class="text-3xl ml-2"/>
+                کسب درآمد
             </li>
             <li class="p-4 flex items-center font-medium tx-xs text-primary">
-                <GenericIcon name="dashboard" :pathCount="4" class="text-xl ml-2"/>
-                ترافیک نیم‌بها
+                <GenericIcon name="dashboard" :pathCount="4" class="text-3xl ml-2"/>
+                پنل توسعه‌دهندگان رایگان
             </li>
         </ul>
     </div>

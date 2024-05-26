@@ -94,16 +94,19 @@ function setMode() {
     @apply bg-success text-white
 }
 
-.btn.btn-primary.btn-lightness {
+.btn.btn-primary.btn-lightness:not(.btn-gradient) {
     @apply bg-primary-tetha text-primary
 }
 
-.btn.btn-success.btn-lightness {
+.btn.btn-success.btn-lightness:not(.btn-gradient) {
     @apply bg-success-alpha text-success
 }
 
-.btn.btn-gradient {
+.btn.btn-gradient:not(.btn-lightness) {
     @apply !bg-success-gradient !text-white
+}
+.btn.btn-gradient.btn-lightness {
+    @apply !border-2 !border-primary-tetha !bg-transparent !text-primary border-solid
 }
 
 

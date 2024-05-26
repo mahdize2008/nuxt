@@ -20,7 +20,6 @@ let paginationItems = [
         iconName: 'star'
     }
 ]
-
 </script>
 <template>
     <div class="container mt-between-section mb-between-section">

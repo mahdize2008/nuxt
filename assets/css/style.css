@@ -75,8 +75,8 @@
     .border-b-public-section{
         @apply border-b-2 border-primary-tetha
     }
-    .border-py-public-section{
-        @apply border-y-2 border-primary-tetha
+    .border-t-public-section{
+        @apply border-t-2 border-primary-tetha
     }
 }
 

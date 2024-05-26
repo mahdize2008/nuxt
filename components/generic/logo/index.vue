@@ -7,7 +7,7 @@ let { hasSubtitle }=defineProps({
 })
 </script>
 <template>
-    <NuxtLink to="/">
+    <NuxtLink class="block" to="/">
         <img src="/img/logo.png">
         <h3 v-if="hasSubtitle" class="text-primary-beta mt-0.5 tx-xs">
             دانلود اپلیکیشن و بازی اندروید
