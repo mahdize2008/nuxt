@@ -14,7 +14,7 @@ let { items, headerSection } = defineProps({
 <template>
     <div>
         <GenericHeaderSection :title="headerSection.title" :subtitle="headerSection.subtitle" :category="headerSection.category" :link="headerSection.link" :iconName="headerSection.iconName" :iconPathCount="headerSection.iconPathCount"/>
-        <Swiper :slidesPerView="7" class="!overflow-y-visible" :spaceBetween="16">
+        <Swiper :slidesPerView="7" class="!p-[60px] !-m-[60px]" :spaceBetween="16">
             <SwiperSlide v-for="(item, index) in items" :key="index">
                 <AppCardNormal :to="item.to" :isOnline="item.isOnline" :hasSield="item.hasSield"
                         :bgImg="item.bgImg" :img="item.img" :name="item.name" :description="item.description"

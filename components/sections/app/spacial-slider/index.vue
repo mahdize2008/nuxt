@@ -20,9 +20,9 @@ let { items } = defineProps({
             <div class="flex items-center">
                 <SectionsOurFitcher hasLogo />
                 <div class="flex mr-auto">
-                    <GenericBtn class="swiper-btn spacial-slider-prev-btn !text-2xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+                    <GenericBtn class="swiper-btn spacial-slider-prev-btn !text-3xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
                         square iconName="right" />
-                    <GenericBtn class="swiper-btn spacial-slider-next-btn !text-2xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+                    <GenericBtn class="swiper-btn spacial-slider-next-btn !text-3xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
                         square iconName="left" />
                 </div>
             </div>

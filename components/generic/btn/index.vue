@@ -1,5 +1,5 @@
 <script setup>
-let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness, to , iconLeftSide } = defineProps({
+let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness,outline, to , iconLeftSide } = defineProps({
     tag: {
         type: String,
         default: 'button',
@@ -45,6 +45,10 @@ let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, ligh
         type: Boolean,
         default: false
     },
+    outline: {
+        type: Boolean,
+        default: false
+    },
     iconLeftSide: {
         type: Boolean,
         default: false
@@ -66,17 +70,17 @@ function setMode() {
 </script>
 <template>
     <component :is="tag" class="btn" :to="to"
-    :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
-        <GenericIcon v-if="iconName&&!iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
-        <slot />
-        <GenericIcon v-if="iconName&&iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'mr-2': !square }"></GenericIcon>
+    :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded },{ 'btn-outline': outline }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
+        <GenericIcon class="v-btn-icon" v-if="iconName&&!iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
+        <slot  class="tx-xs"/>
+        <GenericIcon class="v-btn-icon" v-if="iconName&&iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'mr-2': !square }"></GenericIcon>
     </component>
 </template>
 
 <style scoped>
 /* GENERIC-STYLE */
 .btn {
-    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-xs text-white font-medium cursor-pointer rounded-lg
+    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-2xl text-white font-medium cursor-pointer rounded-lg
 }
 
 
@@ -94,19 +98,26 @@ function setMode() {
     @apply bg-success text-white
 }
 
-.btn.btn-primary.btn-lightness:not(.btn-gradient) {
+.btn.btn-primary.btn-lightness:not(.btn-outline) {
     @apply bg-primary-tetha text-primary
 }
-
-.btn.btn-success.btn-lightness:not(.btn-gradient) {
+.btn.btn-success.btn-lightness:not(.btn-outline) {
     @apply bg-success-alpha text-success
 }
-
-.btn.btn-gradient:not(.btn-lightness) {
-    @apply !bg-success-gradient !text-white
+.btn.btn-outline.btn-lightness {
+    @apply !border-2 !bg-transparent border-solid
 }
-.btn.btn-gradient.btn-lightness {
-    @apply !border-2 !border-primary-tetha !bg-transparent !text-primary border-solid
+
+.btn.btn-primary.btn-lightness.btn-outline {
+    @apply !border-primary-tetha !text-primary
+}
+
+.btn.btn-success.btn-lightness.btn-outline {
+    @apply !border-success-alpha !text-success
+}
+
+.btn.btn-gradient {
+    @apply !bg-success-gradient !text-white
 }
 
 

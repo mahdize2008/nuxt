@@ -2,7 +2,7 @@
 let spacialSliderItems = [
     {
         to: '/design-system',
-        isMode: true,
+        isMode: false,
         isOnline: true,
         hasSield: true,
         bgImg: "/img/background-img-1.png",
@@ -15,7 +15,7 @@ let spacialSliderItems = [
     {
         to: '/design-system',
         isMode: true,
-        isOnline: true,
+        isOnline: false,
         hasSield: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-4.png",
@@ -28,7 +28,7 @@ let spacialSliderItems = [
         to: '/design-system',
         isMode: true,
         isOnline: true,
-        hasSield: true,
+        hasSield: false,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-4.png",
         name: "کلش رویال",
@@ -100,7 +100,7 @@ let trendSliderItems = [
 let normalSliderItems = [
     {
         to: '/design-system',
-        isOnline: true,
+        isOnline: false,
         hasSield: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
@@ -112,7 +112,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        hasSield: false,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -240,7 +240,7 @@ let articlesItems = [
         date: "۲۰ فروردین ۱۴۰۳"
     },
     {
-        hasVideo: true,
+        hasVideo: false,
         to: "/design-system",
         bgImg: "/img/img-2.png",
         imgSrc: "/img/img-1.png",
@@ -305,36 +305,72 @@ let accordionItems = [
 ]
 </script>
 <template>
+    <!-- START-SPACIAL-SLIDER -->
     <SectionsAppSpacialSlider :items="spacialSliderItems"
-        class="mb-between-section py-between-section border-b-public-section" />
+    class="mb-between-section py-between-section border-b-public-section" />
+    <!-- END-SPACIAL-SLIDER -->
+
+    <!-- START-MAIN-HOME-PAGE -->
     <div class="container flex items-start mb-between-section">
-        <GenericToolbarVertical to="/design-system" class="ml-8" />
-        <div class="grow overflow-x-hidden !overflow-y-visible">
+        <!-- START-TOOLBAR -->
+        <GenericToolbarVertical to="/design-system" class="ml-8 sticky top-0.5" />
+        <!-- END-TOOLBAR -->
+
+        <div class="grow max-w-[calc(100%-122px)]">
+            <!-- START-TREND-SLIDER -->
             <SectionsAppTrendSlider :items="trendSliderItems"
-                :headerSection="{ title: 'بازی‌های اندروید', subtitle: 'دانلود اپلیکیشن و بازی اندروید' }"
-                class="mb-between-section last:!mb-0" />
+            :headerSection="{ title: 'بازی‌های اندروید', subtitle: 'دانلود اپلیکیشن و بازی اندروید' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-TREND-SLIDER -->
+
+            <!-- START-TRNEDS-APP-NORMAL-SLIDER -->
             <SectionsAppNormalSlider :items="normalSliderItems"
-                :headerSection="{ title: 'درحال ترند شدن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'پردانلودترین‌ها', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
+            :headerSection="{ title: 'درحال ترند شدن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'پردانلودترین‌ها', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-TRNEDS-APP-NORMAL-SLIDER -->
+
+            <!-- START-APPS-NORMAL-SLIDER -->
             <SectionsAppNormalSlider :items="normalSliderItems"
-                :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'ضروری', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
+            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'ضروری', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-APPS-NORMAL-SLIDER -->
+
+            <!-- START-REQUIRED-APPS -->
             <SectionsAppNormalSlider :items="normalSliderItems"
-                :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
+            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-REQUIRED-APPS -->
+
+            <!-- START-REQUIRED-APPS -->
             <SectionsAppNormalSlider :items="normalSliderItems"
-                :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
+            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-REQUIRED-APPS -->
         </div>
     </div>
-    <SectionsCompany :headerSection="{ title: 'توسعه دهنده‌های برتر', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
-        class="container mb-between-section" :items="companiesItems" />
-    <SectionsProposal class="container mb-between-section" :items="companiesItems" />
-    <SectionsAppSpacialArticle
-        :headerSection="{ title: 'مجله رویدینو', subtitle: 'خبر، آموزش، مقاله و... با مجله رویدینو', link: '/' }"
-        :items="articlesItems" class="mb-between-section" />
-    <SectionsDownloadBox class="container mb-between-section" />
+    <!-- START-MAIN-HOME-PAGE -->
 
-    <SectionsAccordion class="container mb-between-section" to="/" :items="accordionItems"
-        :headerSection="{ title: 'سوالات متداول', subtitle: 'سوالات پرتکرار شما'}" />
+    <!-- START-DEVELOPERS -->
+    <SectionsDeveloperSlider :headerSection="{ title: 'توسعه دهنده‌های برتر', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
+    class="container mb-between-section" :items="companiesItems" />
+    <!-- END-DEVELOPERS -->
+
+    <!-- START-PROPOSAL -->
+    <SectionsSuggest class="container mb-between-section" :items="companiesItems" />
+    <!-- END-PROPOSAL -->
+
+    <!-- START-NEW-ARTICLE -->
+    <SectionsArticleNewArticles
+    :headerSection="{ title: 'مجله رویدینو', subtitle: 'خبر، آموزش، مقاله و... با مجله رویدینو', link: '/' }"
+    :items="articlesItems" class="mb-between-section" />
+    <!-- END-NEW-ARTICLE -->
+    
+    <!-- START-DOWNLOAD-APP -->
+    <SectionsDownloadApplication class="container mb-between-section" />
+    <!-- END-DOWNLOAD-APP -->
+
+    <!-- START-FAQ -->
+    <SectionsFaq class="container mb-between-section" to="/" :items="accordionItems"
+    :headerSection="{ title: 'سوالات متداول', subtitle: 'سوالات پرتکرار شما'}" />
+    <!-- END-FAQ -->
 </template>

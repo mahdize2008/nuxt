@@ -45,7 +45,7 @@ let { bgImg, img, name, description, rate, isOnline, to } = defineProps({
                     {{ description }}
                 </p>
             </div>
-            <GenericRating dark :rate="rate" class="mr-auto" />
+            <GenericRating theme="dark" :rate="rate" class="mr-auto" />
         </div>
     </NuxtLink>
 </template>

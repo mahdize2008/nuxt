@@ -9,7 +9,7 @@ let { hasSubtitle }=defineProps({
 <template>
     <NuxtLink class="block" to="/">
         <img src="/img/logo.png">
-        <h3 v-if="hasSubtitle" class="text-primary-beta mt-0.5 tx-xs">
+        <h3 v-if="hasSubtitle" class="text-primary-beta mt-0.5 tx-2xs">
             دانلود اپلیکیشن و بازی اندروید
         </h3>
     </NuxtLink>

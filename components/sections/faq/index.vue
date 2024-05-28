@@ -25,7 +25,7 @@ let { items,headerSection ,to} = defineProps({
             پاسخ سوالتون رو پیدا نکردید؟ 
             <NuxtLink :to="to" class="tx-xs flex items-center text-success mr-4">
                 مشاهده همه سوالات متداول
-                <GenericIcon name="left" class="!text-2xs mr-1.5"/>
+                <GenericIcon name="left" class="!text-4xs mr-1.5"/>
             </NuxtLink>
         </div>
     </div>

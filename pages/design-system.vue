@@ -76,17 +76,17 @@ let paginationItems = [
     <div class="container mb-between-section">
         <div class="flex items-center mb-10">
             <span class="ml-5 block">45px</span>
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="success" rounded square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="primary" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="success" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs" to="/design-system" theme="success" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="success" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-2xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="ml-5 last:ml-0 !text-3xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
         </div>
         <div class="flex items-center mb-10">
@@ -226,9 +226,9 @@ let paginationItems = [
     <div class="container mb-between-section flex items-center">
         <SectionsOurFitcher hasLogo/>
         <div class="flex mr-auto">
-            <GenericBtn class="!text-2xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="!text-3xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="right" />
-            <GenericBtn class="!text-2xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="!text-3xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
         </div>
     </div>

@@ -46,8 +46,9 @@ export default {
 
     },
     fontSize: {
-      '3xs': '8px',
-      '2xs': '10px',
+      '4xs': '8px',
+      '3xs': '10px',
+      '2xs': '11px',
       xs: '12px',
       sm: '14px',
       base: '16px',

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="py-[95px] flex flex-col items-center">
+        <div class="py-[95px] flex flex-col items-center bg-cover bg-center" style="background-image:url(/img/back-2.png)">
             <div class="w-[126px] bg-white mb-[30px] h-[126px] flex items-center justify-center shadow-lighter rounded-11xl">
                 <img src="/img/logo-2.png" alt="">
             </div>

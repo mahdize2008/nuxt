@@ -21,6 +21,6 @@
         <span class="ml-3 mr-2 block">
             {{ title }}
         </span>
-        <GenericIcon name="down" class="text-2xs text-primary-beta"/>
+        <GenericIcon name="down" class="text-4xs text-primary-beta"/>
     </div>
 </template>

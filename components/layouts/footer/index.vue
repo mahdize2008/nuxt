@@ -144,7 +144,7 @@ function scrollToTop() {
 
         <div class="w-[20%] ml-auto">
             <GenericLogo class="max-w-full mb-5" />
-            <GenericBtn tag="NuxtLink" iconName="download" class="!px-11 !text-md" gradient lightness :iconPathCount="4">
+            <GenericBtn tag="NuxtLink" to="/design-system" iconName="download" class="!px-11 !text-md" outline lightness :iconPathCount="4">
                 <span class="tx-xs font-medium">
                     اپلیکیشن رویدینو
                 </span>
@@ -156,7 +156,7 @@ function scrollToTop() {
         <LayoutsFooterNav :items="navList4" class="w-[11.5%]" />
         <div class="mr-auto">
             <LayoutsFooterSocialMedia :items="socialMediaItem" class="mb-10" />
-            <LayoutsFooterNamad :items="namads" class="mr-auto" />
+            <LayoutsFooterNamad :items="namads" class="w-fit mr-auto" />
         </div>
     </div>
     <div class="container mb-2.5">
@@ -171,7 +171,7 @@ function scrollToTop() {
         <div class="pb-5 flex items-center tx-xs text-primary-beta font-medium">
             © تمامی حقوق برای مجموعه‌ی رویدینو محفوظ می‌باشد.
             <GenericBtn @click="scrollToTop" iconLeftSide iconName="download" rounded class="!px-3 !text-md mr-auto"
-                gradient lightness :iconPathCount="4">
+                outline lightness :iconPathCount="4">
                 <span class="tx-xs">
                     بازگشت به بالا
                 </span>

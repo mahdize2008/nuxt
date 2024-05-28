@@ -27,7 +27,7 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
 })
 </script>
 <template>
-    <div class="flex items-center mb-5">
+    <div class="flex items-center relative z-10 mb-5">
         <div>
             <h2 class="tx-base text-primary font-medium mb-0.5 flex items-center">
                 <GenericIcon class="text-2xl ml-2.5" v-if="iconName" :name="iconName" :pathCount="iconPathCount"/>
@@ -47,7 +47,7 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
         </ul>
         <NuxtLink v-if="link" :to="link" class="tx-xs text-primary hover:text-success transition-all group flex items-center mr-auto">
             مشاهده بیشتر
-            <GenericIcon name="left" class="text-primary-beta transition-all group-hover:text-success text-3xs mr-2"/>
+            <GenericIcon name="left" class="text-primary-beta transition-all group-hover:text-success text-4xs mr-2"/>
         </NuxtLink>
     </div>
 </template>

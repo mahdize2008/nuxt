@@ -52,7 +52,7 @@ let { img, name, description, category, rate, isOnline, to,hasSield } = definePr
         </div>
         <div class="flex items-center text-primary-beta w-full tx-xs">
             {{ category }}
-            <GenericRating dark :rate="rate" class="mr-auto" />
+            <GenericRating theme="dark" :rate="rate" class="mr-auto" />
             <GenericIcon v-if="hasSield" name="shield_chek" class="text-success text-lg mr-2" />
         </div>
     </NuxtLink>

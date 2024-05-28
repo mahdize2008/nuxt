@@ -17,7 +17,7 @@ let dropdownItems2 = [
 <template>
     <header class="border-b-public-section">
         <div class="container flex items-center py-7 ">
-            <GenericLogo hasSubtitle class="ml-3.5" />
+            <GenericLogo hasSubtitle class="ml-3.5 w-[143px]" />
             <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0"
                 class="ml-3.5 !w-[27px] !h-[27px] !text-sm" lightness square rounded />
             <GenericDropdownHeader class="ml-3.5" to="/design-system" :items="dropdownItems1" />
@@ -28,11 +28,11 @@ let dropdownItems2 = [
                 </template>
             </GenericInput>
             <div class="flex items-center mr-auto">
-                <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl"
+                <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0"
                     lightness square rounded />
-                <GenericBtn tag="NuxtLink" to="/" iconName="category" :iconPathCount="4" class="ml-4 last:ml-0 !text-lg"
+                <GenericBtn tag="NuxtLink" to="/" iconName="category" :iconPathCount="4" class="ml-4 last:ml-0"
                     lightness square rounded />
-                <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl"
+                <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0"
                     lightness square rounded />
             </div>
         </div>

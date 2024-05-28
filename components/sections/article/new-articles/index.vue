@@ -25,9 +25,11 @@ let firstArticle = items[0]
                         :title="firstArticle.title" :description="firstArticle.description" :date="firstArticle.date" />
                 </div>
                 <div class="w-[46%] p-[15px]">
-                    <ArticleCardRow v-for="(article, index) in items" :class="{ 'hidden': index === 0 }" :key="index"
-                        :hasVideo="article.hasVideo" :to="article.to" :imgSrc="article.imgSrc" :title="article.title"
-                        :date="article.date" />
+                    <template v-for="(article, index) in items" :key="index">
+                        <ArticleCardRow v-if="index !== 0"
+                            :hasVideo="article.hasVideo" :to="article.to" :imgSrc="article.imgSrc" :title="article.title"
+                            :date="article.date" />
+                    </template>
                 </div>
             </div>
         </div>
