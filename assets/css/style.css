@@ -6,7 +6,7 @@
 
 @layer base {
     html {
-        @apply text-right font-["iranSans"];
+        @apply text-right font-["estedad"];
         direction: rtl;
     }
 
