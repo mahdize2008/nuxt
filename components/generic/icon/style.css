@@ -50,7 +50,6 @@ i .path1 {
 }
 .icon-shield_checked .path2:before {
   content: "\e902";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-shield .path1:before {
@@ -59,7 +58,6 @@ i .path1 {
 }
 .icon-shield .path2:before {
   content: "\e904";
-  margin-left: -1em;
   color: rgb(53, 57, 94);
 }
 .icon-gamepad .path1:before {
@@ -68,17 +66,14 @@ i .path1 {
 }
 .icon-gamepad .path2:before {
   content: "\e906";
-  margin-left: -1em;
   color: rgb(53, 57, 94);
 }
 .icon-gamepad .path3:before {
   content: "\e907";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-gamepad .path4:before {
   content: "\e908";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-dashboard .path1:before {
@@ -87,7 +82,6 @@ i .path1 {
 }
 .icon-dashboard .path2:before {
   content: "\e90a";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-diamond .path1:before {
@@ -96,7 +90,6 @@ i .path1 {
 }
 .icon-diamond .path2:before {
   content: "\e90c";
-  margin-left: -1em;
   color: rgb(53, 57, 94);
 }
 .icon-youtube:before {
@@ -124,17 +117,14 @@ i .path1 {
 }
 .icon-profile .path2:before {
   content: "\e916";
-  margin-left: -0.9599609375em;
   color: rgb(255, 255, 255);
 }
 .icon-profile .path3:before {
   content: "\e917";
-  margin-left: -0.9599609375em;
   color: rgb(53, 57, 94);
 }
 .icon-profile .path4:before {
   content: "\e918";
-  margin-left: -0.9599609375em;
   color: rgb(53, 57, 94);
 }
 .icon-category .path1:before {
@@ -143,17 +133,14 @@ i .path1 {
 }
 .icon-category .path2:before {
   content: "\e91a";
-  margin-left: -0.9599609375em;
   color: rgb(53, 57, 94);
 }
 .icon-category .path3:before {
   content: "\e91b";
-  margin-left: -0.9599609375em;
   color: rgb(10, 198, 36);
 }
 .icon-category .path4:before {
   content: "\e91c";
-  margin-left: -0.9599609375em;
   color: rgb(53, 57, 94);
 }
 .icon-download .path1:before {
@@ -162,7 +149,6 @@ i .path1 {
 }
 .icon-download .path2:before {
   content: "\e91e";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-search .path1:before {
@@ -171,7 +157,6 @@ i .path1 {
 }
 .icon-search .path2:before {
   content: "\e920";
-  margin-left: -0.9599609375em;
   color: rgb(53, 57, 94);
 }
 .icon-more .path1:before {
@@ -180,12 +165,10 @@ i .path1 {
 }
 .icon-more .path2:before {
   content: "\e926";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-more .path3:before {
   content: "\e927";
-  margin-left: -1em;
   color: rgb(53, 57, 94);
 }
 .icon-wifi:before {
@@ -201,13 +184,11 @@ i .path1 {
 }
 .icon-signal .path2:before {
   content: "\e933";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
   opacity: 0.2;
 }
 .icon-signal .path3:before {
   content: "\e934";
-  margin-left: -1em;
   color: rgb(10, 198, 36);
 }
 .icon-star:before {
