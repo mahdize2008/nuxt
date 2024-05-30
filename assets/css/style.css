@@ -6,7 +6,7 @@
 
 @layer base {
     html {
-        @apply text-right font-["iranSans"];
+        @apply text-right font-["estedad"];
         direction: rtl;
     }
 
@@ -71,6 +71,13 @@
     .bg-primary-beler{
         @apply bg-primary-landa/70 border border-white/20 backdrop-blur-xl
     }
+
+    .border-b-public-section{
+        @apply border-b-2 border-primary-tetha
+    }
+    .border-t-public-section{
+        @apply border-t-2 border-primary-tetha
+    }
 }
 
 @layer utilities {
@@ -98,6 +105,10 @@
 
     .tx-xs {
         @apply text-xs
+    }
+
+    .tx-2xs {
+        @apply text-2xs
     }
 
 }

@@ -18,7 +18,7 @@ let { img, name, description, to, gradient } = defineProps({
     },
     gradient: {
         type: Object,
-        default: []
+        default: {}
     }
 })
 </script>

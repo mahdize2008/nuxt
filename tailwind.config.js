@@ -46,7 +46,9 @@ export default {
 
     },
     fontSize: {
-      '2xs': '10px',
+      '4xs': '8px',
+      '3xs': '10px',
+      '2xs': '11px',
       xs: '12px',
       sm: '14px',
       base: '16px',
@@ -70,10 +72,12 @@ export default {
       '2xl': '12px',
       '3xl': '14px',
       '4xl': '16px',
+      '11xl': '30px',
       'full': '9999px',
     },
     boxShadow: {
       'hover': '0px 15px 60px 0px #E5E6F3',
+      'lighter': '0px 11.197px 31.631px 0px rgba(53, 57, 94, 0.10), 0px 2.799px 0px 0px #E8E9F0',
     },
     extend: {
       backgroundImage: {

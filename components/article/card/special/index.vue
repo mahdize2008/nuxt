@@ -29,7 +29,7 @@ let { bgImg, title, description, date,hasVideo,to } = defineProps({
 
 <template>
     <NuxtLink :to="to" class="h-[505px] w-full rounded-4xl overflow-hidden relative flex flex-col justify-end p-5">
-        <img :src="bgImg" class="absolute top-1/2 -translate-y-1/2 right-0 min-w-full min-h-full object-cover">
+        <img :src="bgImg" class="absolute top-1/2 -translate-y-1/2 right-0 w-full h-full object-cover">
         <GenericPlay v-if="hasVideo"/>
         <div class="rounded-lg bg-primary-beler px-5 py-7 relative z-10 w-full">
             <h2 class="text-white mb-4 tx-base">

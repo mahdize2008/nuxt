@@ -1,6 +1,6 @@
 <script setup>
-let { ImgSrc, title, description, date, hasVideo, to } = defineProps({
-    ImgSrc: {
+let { imgSrc, title, description, date, hasVideo, to } = defineProps({
+    imgSrc: {
         type: String,
         default: ''
     },
@@ -26,7 +26,7 @@ let { ImgSrc, title, description, date, hasVideo, to } = defineProps({
 <template>
     <NuxtLink :to="to" class="w-full group flex items-start border-b-2 border-b-primary-tetha py-5 last:border-b-0 first:!pt-0 last:!pb-0">
         <div class="grow ml-5">
-            <h2 class="text-primary font-semibold mb-2.5 group-hover:text-success transition-all tx-base">
+            <h2 class="text-primary font-semibold line-clamp-2 mb-2.5 group-hover:text-success transition-all tx-base">
                 {{ title }}
             </h2>
             <div class="flex items-center tx-xs text-primary">
@@ -35,7 +35,7 @@ let { ImgSrc, title, description, date, hasVideo, to } = defineProps({
             </div>
         </div>
         <div class="relative shrink-0">
-            <img class="aspect-video h-[95px] rounded-xl" :src="ImgSrc">
+            <img class="aspect-video h-[95px] rounded-xl" :src="imgSrc">
             <GenericPlay size="sm" v-if="hasVideo"/>
         </div>
     </NuxtLink>

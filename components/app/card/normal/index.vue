@@ -1,5 +1,5 @@
 <script setup>
-let { img, name, description, category, rate, isOnline, to,hasShild } = defineProps({
+let { img, name, description, category, rate, isOnline, to,hasSield } = defineProps({
     img: {
         type: String,
         default: ''
@@ -24,7 +24,7 @@ let { img, name, description, category, rate, isOnline, to,hasShild } = definePr
         type: Boolean,
         default: false
     },
-    hasShild: {
+    hasSield: {
         type: Boolean,
         default: false
     },
@@ -52,8 +52,8 @@ let { img, name, description, category, rate, isOnline, to,hasShild } = definePr
         </div>
         <div class="flex items-center text-primary-beta w-full tx-xs">
             {{ category }}
-            <GenericRating dark :rate="rate" class="mr-auto" />
-            <GenericIcon v-if="hasShild" name="shield_chek" class="text-success text-lg mr-2" />
+            <GenericRating theme="dark" :rate="rate" class="mr-auto" />
+            <GenericIcon v-if="hasSield" name="shield_chek" class="text-success text-lg mr-2" />
         </div>
     </NuxtLink>
 </template>

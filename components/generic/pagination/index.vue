@@ -10,7 +10,7 @@
 <template>
     <ul class="flex items-center -m-1.5">
         <li class="px-1.5" v-for="(item,index) of items" :key="index">
-            <GenericBtn tagName="a" :iconName="item.iconName" square rounded lightness >
+            <GenericBtn tag="a" :iconName="item.iconName" square rounded lightness >
                 {{ item.text }}
             </GenericBtn>
         </li>
