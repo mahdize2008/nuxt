@@ -76,38 +76,34 @@ let paginationItems = [
     <div class="container mb-between-section">
         <div class="flex items-center mb-10">
             <span class="ml-5 block">45px</span>
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0" to="/design-system" theme="primary" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0" to="/design-system" theme="primary" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="success" rounded square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="primary" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0" to="/design-system" theme="success" rounded square iconName="left" />
+            <GenericBtn class="ml-5 last:ml-0" to="/design-system" theme="primary" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs" to="/design-system" theme="success" rounded lightness square
+            <GenericBtn class="ml-5 last:ml-0" to="/design-system" theme="success" rounded lightness square
                 iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="ml-5 last:ml-0 !rounded-l-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
-            <GenericBtn class="ml-5 last:ml-0 !text-3xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="ml-5 last:ml-0 !rounded-r-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
         </div>
         <div class="flex items-center mb-10">
             <span class="ml-5 block">35px</span>
-            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" size="sm" gradient class="ml-5 last:ml-0">نمونه دکمه</GenericBtn>
         </div>
         <div class="flex items-center">
             <span class="ml-5 block">45px</span>
-            <GenericBtn to="/design-system" gradient rounded iconName="star" class="ml-5 last:ml-0 !text-2xl">
-                <span class="tx-xs">
+            <GenericBtn to="/design-system" gradient rounded iconName="star" class="ml-5 last:ml-0">
                     نمونه دکمه
-                </span>
             </GenericBtn>
-            <GenericBtn to="/design-system" gradient iconName="star" class="ml-5 last:ml-0 !text-2xl">
-                <span class="tx-xs">
+            <GenericBtn to="/design-system" gradient iconName="star" class="ml-5 last:ml-0">
                     نمونه دکمه
-                </span>
             </GenericBtn>
-            <GenericBtn to="/design-system" gradient rounded class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
-            <GenericBtn to="/design-system" gradient class="ml-5 last:ml-0 !tx-xs">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" gradient rounded class="ml-5 last:ml-0">نمونه دکمه</GenericBtn>
+            <GenericBtn to="/design-system" gradient class="ml-5 last:ml-0">نمونه دکمه</GenericBtn>
         </div>
     </div>
     <div class="container mb-between-section">
@@ -226,18 +222,18 @@ let paginationItems = [
     <div class="container mb-between-section flex items-center">
         <SectionsOurFitcher hasLogo/>
         <div class="flex mr-auto">
-            <GenericBtn class="!text-3xs !rounded-l-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="!rounded-l-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="right" />
-            <GenericBtn class="!text-3xs !rounded-r-none" to="/design-system" theme="primary" rounded lightness
+            <GenericBtn class="!rounded-r-none" to="/design-system" theme="primary" rounded lightness
                 square iconName="left" />
         </div>
     </div>
 
     <div class="container mb-between-section flex items-center">
-        <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0" class="ml-4 !w-[27px] !h-[27px] last:ml-0 !text-sm" lightness square rounded/>
-        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl" lightness square rounded/>
-        <GenericBtn tag="NuxtLink" to="/" iconName="category" :iconPathCount="4" class="ml-4 last:ml-0 !text-lg" lightness square rounded/>
-        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0 !text-2xl" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0" class="ml-4 !w-[27px] !h-[27px] last:ml-0" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="category" :iconPathCount="4" class="ml-4 last:ml-0" lightness square rounded/>
+        <GenericBtn tag="NuxtLink" to="/" iconName="profile" :iconPathCount="4" class="ml-4 last:ml-0" lightness square rounded/>
     </div>
 </template>
 

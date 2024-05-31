@@ -18,10 +18,8 @@
                     ۱۳ مگابایت
                 </li>
             </ul>
-            <GenericBtn gradient iconName="download1" class="!tetx-white !px-[70px] !text-lg">
-                <span class="tx-xs font-medium">
+            <GenericBtn gradient iconName="download1" class="!tetx-white !px-[70px]">
                     دانلود
-                </span>
             </GenericBtn>
         </div>
     </div>

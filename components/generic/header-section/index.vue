@@ -1,5 +1,5 @@
 <script setup>
-let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
+let {title,subtitle,category,grouping,link , iconName , iconPathCount} = defineProps({
     title:{
         type:String,
         default:''
@@ -9,6 +9,10 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
         default:''
     },
     category:{
+        type:Array,
+        default:[]
+    },
+    grouping:{
         type:Array,
         default:[]
     },
@@ -38,11 +42,18 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
                 {{subtitle}}
             </div>
         </div>
-        <ul v-if="category" class="-mx-3 mr-6 flex items-center justify-center">
-            <li v-for="(item , index) in category" :key="index">
-                <NuxtLink :to="item.to" class="categoryLink hover:text-primary-alpha after:hidden [&.active]:after:block [&.active]:text-success block py-1.5 px-3 relative text-primary-beta transition-all tx-xs">
+        <ul v-if="grouping" class="-mx-3 mr-6 flex items-center justify-center">
+            <li v-for="(item , index) in grouping" :key="index">
+                <NuxtLink :to="item.to" class="groupingLink hover:text-primary-alpha after:hidden [&.active]:after:block [&.active]:text-success block py-1.5 px-3 relative text-primary-beta transition-all tx-xs">
                     {{ item.title }}
                 </NuxtLink>
+            </li>
+        </ul>
+        <ul v-if="category" class="-mx-3 mr-6 flex items-center justify-center">
+            <li v-for="(item , index) in category" :key="index" class="ml-2.5 last:ml-0">
+                <GenericTag :to="item.to">
+                    {{ item.title }}
+                </GenericTag>
             </li>
         </ul>
         <NuxtLink v-if="link" :to="link" class="tx-xs text-primary hover:text-success transition-all group flex items-center mr-auto">
@@ -53,7 +64,7 @@ let {title,subtitle,category,link , iconName , iconPathCount} = defineProps({
 </template>
 
 <style scoped>
-.categoryLink:after{
+.groupingLink:after{
     @apply content-[''] !w-[3px] !h-[3px] rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 bg-success
 }
 </style>

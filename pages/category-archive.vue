@@ -6,71 +6,7 @@ let route=[
     },
     {
         title:'توسعه‌دهنده‌ها',
-        to:'/cat-archive'
     }
-]
-
-let spacialSliderItems = [
-    {
-        to: '/design-system',
-        isMode: false,
-        isOnline: true,
-        hasSield: true,
-        bgImg: "/img/background-img-1.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        category: "استراتژیک",
-        rate: 5.1
-    },
-    {
-        to: '/design-system',
-        isMode: true,
-        isOnline: false,
-        hasSield: true,
-        bgImg: "/img/background-img-1.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        category: "استراتژیک",
-        rate: 5.1
-    },
-    {
-        to: '/design-system',
-        isMode: true,
-        isOnline: true,
-        hasSield: false,
-        bgImg: "/img/background-img-1.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        category: "استراتژیک",
-        rate: 5.1
-    },
-    {
-        to: '/design-system',
-        isMode: true,
-        isOnline: true,
-        hasSield: true,
-        bgImg: "/img/background-img-1.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        category: "استراتژیک",
-        rate: 5.1
-    },
-    {
-        to: '/design-system',
-        isMode: true,
-        isOnline: true,
-        hasSield: true,
-        bgImg: "/img/background-img-1.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        category: "استراتژیک",
-        rate: 5.1
-    },
 ]
 
 let trendSliderItems = [
@@ -108,7 +44,71 @@ let trendSliderItems = [
     },
 ]
 
+let choiceItems=[
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+    {
+        name:'استراتژی',
+        img:'/img/category.png',
+        to:'/'
+    },
+]
+
 let normalSliderItems = [
+    {
+        to: '/design-system',
+        isOnline: false,
+        hasSield: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
     {
         to: '/design-system',
         isOnline: false,
@@ -324,7 +324,7 @@ let accordionItems = [
     <!-- START-MAIN-HOME-PAGE -->
     <div class="container flex items-start mb-between-section">
         <!-- START-TOOLBAR -->
-        <GenericToolbarVertical to="/design-system" class="ml-8 sticky top-0.5" />
+        <GenericToolbarVertical to="/design-system" class="ml-8 sticky z-20 top-0.5" />
         <!-- END-TOOLBAR -->
 
         <div class="grow max-w-[calc(100%-122px)]">
@@ -334,27 +334,38 @@ let accordionItems = [
             class="mb-between-section last:!mb-0" />
             <!-- END-TREND-SLIDER -->
 
-            <!-- START-TRNEDS-APP-NORMAL-SLIDER -->
-            <SectionsAppNormalSlider :items="normalSliderItems"
-            :headerSection="{ title: 'درحال ترند شدن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'پردانلودترین‌ها', to: '/' }], link: '/' }"
-            class="mb-between-section last:!mb-0" />
-            <!-- END-TRNEDS-APP-NORMAL-SLIDER -->
+            <!-- START-CHOICE-CATEGORY -->
+            <SectionsChoiceCategory :categories="choiceItems" description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری است." class="container mb-between-section"/>
+            <!-- END-CHOICE-CATEGORY -->
 
-            <!-- START-APPS-NORMAL-SLIDER -->
-            <SectionsAppNormalSlider :items="normalSliderItems"
-            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'بازی‌های پیشنهادی', to: '/' }, { title: 'آخرین بازی‌ها', to: '/' }, { title: 'ضروری', to: '/' }], link: '/' }"
+
+            <!-- START-HAS-DATA-GAMES -->
+            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
             class="mb-between-section last:!mb-0" />
-            <!-- END-APPS-NORMAL-SLIDER -->
+            <!-- END-HAS-DATA-GAMES -->
+
+            <!-- START-ACTION-GAMES -->
+            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-ACTION-GAMES -->
+
+            <!-- START-HAS-DATA-GAMES -->
+            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-HAS-DATA-GAMES -->
+
+            <!-- START-ACTION-GAMES -->
+            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-ACTION-GAMES -->
 
             <!-- START-REQUIRED-APPS -->
-            <SectionsAppNormalSlider :items="normalSliderItems"
-            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
-            class="mb-between-section last:!mb-0" />
-            <!-- END-REQUIRED-APPS -->
-
-            <!-- START-REQUIRED-APPS -->
-            <SectionsAppNormalSlider :items="normalSliderItems"
-            :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'پیام‌رسان‌ها', to: '/' }, { title: 'شبکه‌های اجتماعی', to: '/' }, { title: 'پرکاربرد و ابزار', to: '/' }], link: '/' }"
+            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-REQUIRED-APPS -->
         </div>
@@ -384,4 +395,9 @@ let accordionItems = [
     <SectionsFaq class="container mb-between-section" to="/" :items="accordionItems"
     :headerSection="{ title: 'سوالات متداول', subtitle: 'سوالات پرتکرار شما'}" />
     <!-- END-FAQ -->
+
+    <!-- START-ABOUT -->
+    <SectionsAboutRoidino class="container mb-between-section"/>
+    <!-- END-ABOUT -->
+
 </template>

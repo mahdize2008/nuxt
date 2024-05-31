@@ -19,7 +19,7 @@ let dropdownItems2 = [
         <div class="container flex items-center py-7 ">
             <GenericLogo hasSubtitle class="ml-3.5 w-[143px]" />
             <GenericBtn tag="NuxtLink" to="/" iconName="dark-mode" :iconPathCount="0"
-                class="ml-3.5 !w-[27px] !h-[27px] !text-sm" lightness square rounded />
+                class="ml-3.5 !w-[27px] !h-[27px]" lightness square rounded />
             <GenericDropdownHeader class="ml-3.5" to="/design-system" :items="dropdownItems1" />
             <GenericDropdownHeader class="ml-3.5" to="/design-system" :items="dropdownItems2" />
             <GenericInput class="w-[330px] last:mb-0" placeholder="حالت عادی">

@@ -28,8 +28,8 @@ let show = ref(false)
                 <h2 class="tx-base font-medium text-primary tx-xs">
                     {{ title }}
                 </h2>
-                <GenericBtn v-if="show" iconName="up" lightness rounded square class="mr-auto !text-3xs" />
-                <GenericBtn v-if="!show" iconName="down" lightness rounded square class="mr-auto !text-3xs" />
+                <GenericBtn v-if="show" iconName="up" lightness rounded square class="mr-auto" />
+                <GenericBtn v-if="!show" iconName="down" lightness rounded square class="mr-auto" />
             </div>
             <div class="pt-4 pb-9" v-if="show">
                 <p class="tx-xs text-primary">

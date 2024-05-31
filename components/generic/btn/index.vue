@@ -72,7 +72,7 @@ function setMode() {
     <component :is="tag" class="btn" :to="to"
     :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded },{ 'btn-outline': outline }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
         <GenericIcon class="v-btn-icon" v-if="iconName&&!iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
-        <slot  class="tx-xs"/>
+        <slot class="!tx-sm"/>
         <GenericIcon class="v-btn-icon" v-if="iconName&&iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'mr-2': !square }"></GenericIcon>
     </component>
 </template>
@@ -80,7 +80,7 @@ function setMode() {
 <style scoped>
 /* GENERIC-STYLE */
 .btn {
-    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-2xl text-white font-medium cursor-pointer rounded-lg
+    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-sm text-white font-medium cursor-pointer rounded-lg
 }
 
 
@@ -96,6 +96,10 @@ function setMode() {
 /* BTN-COLOR */
 .btn.btn-success {
     @apply bg-success text-white
+}
+
+.v-btn-icon{
+    @apply text-2xl
 }
 
 .btn.btn-primary.btn-lightness:not(.btn-outline) {

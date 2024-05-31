@@ -18,7 +18,7 @@ let { items,headerSection ,to} = defineProps({
 <template>
     <div>
         <GenericHeaderSection :title="headerSection.title" :subtitle="headerSection.subtitle"
-            :category="headerSection.category" :link="headerSection.link" :iconName="headerSection.iconName"
+            :grouping="headerSection.grouping" :link="headerSection.link" :iconName="headerSection.iconName"
             :iconPathCount="headerSection.iconPathCount" />
         <GenericAccordion :items="items" class="mb-6"/>
         <div class="flex items-center tx-sm">

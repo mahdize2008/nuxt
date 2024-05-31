@@ -14,7 +14,7 @@ let { items, headerSection } = defineProps({
 <template>
   <div>
     <GenericHeaderSection :title="headerSection.title" :subtitle="headerSection.subtitle"
-      :category="headerSection.category" :link="headerSection.link" :iconName="headerSection.iconName"
+      :grouping="headerSection.grouping" :link="headerSection.link" :iconName="headerSection.iconName"
       :iconPathCount="headerSection.iconPathCount" />
     <Swiper :slides-per-view="7" :space-between="16">
       <SwiperSlide class="" v-for="(item, index) in items" :key="index">
