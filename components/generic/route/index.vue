@@ -9,7 +9,7 @@ let {items}=defineProps({
 
 <template>
     <ul class="flex items-center -mx-[18px]">
-        <li v-for="(item,index) in items" :key="index" class="route-item last:after:!hidden relative text-primary-beta">
+        <li v-for="(item,index) in items" :key="index" class="route-item last:after:!hidden relative text-primary">
             <NuxtLink class="block tx-xs px-[18px] font-medium" :to="item.to">
                 {{ item.title }}
             </NuxtLink>
@@ -23,7 +23,7 @@ let {items}=defineProps({
     content: "\e924";
     @apply text-4xs absolute left-0 top-1/2 -translate-y-1/2 text-primary-beta -translate-x-1/2;
 }
-.route-item:first-child{
-    @apply text-primary;
+.route-item:last-child{
+    @apply text-primary-beta;
 }
 </style>

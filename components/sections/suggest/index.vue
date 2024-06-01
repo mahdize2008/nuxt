@@ -10,8 +10,8 @@
                 <p class="mb-4 tx-xs font-medium text-primary-beta">
                     می‌خوای بفهمی چه‌خبره؟ رو دکمه‌ی زیر کلیک کن...
                 </p>
-                <GenericBtn tag="NuxtLink" iconName="left" iconLeftSide class="!text-4xs !px-8" to="/" gradient rounded>
-                    <span class="tx-xs">پیشنهاد بده</span>
+                <GenericBtn tag="NuxtLink" iconName="left" iconLeftSide class="!px-8" to="/" gradient rounded>
+                    پیشنهاد بده
                 </GenericBtn>
             </div>
             <img src="/img/back.png" class="absolute top-0 left-0 h-full">

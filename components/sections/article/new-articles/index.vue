@@ -17,7 +17,7 @@ let firstArticle = items[0]
     <div>
         <div class="container">
             <GenericHeaderSection :title="headerSection.title" :subtitle="headerSection.subtitle"
-                :category="headerSection.category" :link="headerSection.link" :iconName="headerSection.iconName"
+                :grouping="headerSection.grouping" :link="headerSection.link" :iconName="headerSection.iconName"
                 :iconPathCount="headerSection.iconPathCount" />
             <div class="flex items-start -m-[15px]">
                 <div class="w-[54%] p-[15px]">
