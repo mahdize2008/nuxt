@@ -36,10 +36,17 @@ export default {
       'primary-landa': 'rgb(var(--color-primary-landa) / <alpha-value>)',
 
 
+      'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
+      'secondary-alpha': 'rgb(var(--color-secondary-alpha) / <alpha-value>)',
+      'secondary-light': 'rgb(var(--color-secondary-light) / <alpha-value>)',
+
+
       success: 'rgb(var(--color-success) / <alpha-value>)',
       'success-alpha': 'rgb(var(--color-success-alpha) / <alpha-value>)',
+      'success-beta': 'rgb(var(--color-success-beta) / <alpha-value>)',
 
       warning: 'rgb(var(--color-warning) / <alpha-value>)',
+      'warning-alpha': 'rgb(var(--color-warning-alpha) / <alpha-value>)',
 
       danger: 'rgb(var(--color-danger) / <alpha-value>)',
       'danger-alpha': 'rgb(var(--color-danger-alpha) / <alpha-value>)',
@@ -60,6 +67,7 @@ export default {
       '4xl': '28px',
       '5xl': '30px',
       '15xl': '50px',
+      '25xl': '70px',
     },
     borderRadius: {
       'none': '0',

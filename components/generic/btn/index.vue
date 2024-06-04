@@ -38,7 +38,7 @@ let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, ligh
         type: String,
         default: 'primary',
         validator: (value) => {
-            return ['primary', 'success'].includes(value);
+            return ['primary', 'success','dark'].includes(value);
         },
     },
     lightness: {
@@ -96,6 +96,10 @@ function setMode() {
 /* BTN-COLOR */
 .btn.btn-success {
     @apply bg-success text-white
+}
+
+.btn.btn-dark {
+    @apply bg-black/50 text-white
 }
 
 .v-btn-icon{

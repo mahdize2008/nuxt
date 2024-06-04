@@ -15,7 +15,6 @@
         --color-white: 255 255 255;
         --color-black: 0 0 0;
 
-
         /* PRIMARY */
         --color-primary: 53 57 94;
         --color-primary-alpha: 127 130 161;
@@ -24,12 +23,19 @@
         --color-primary-tetha: 240 241 249;
         --color-primary-landa: 34 37 67;
 
+        /* SECONDARY */
+        --color-secondary: 58 148 255;
+        --color-secondary-alpha: 75 223 255;
+        --color-secondary-light: 230 248 255;
+
         /* SUCCESS */
         --color-success: 10 198 36;
         --color-success-alpha: 218 247 222;
+        --color-success-beta: 160 219 34;
 
         /* WARNING */
         --color-warning: 255 214 0;
+        --color-warning-alpha: 255 122 0;
 
         /* DANGER */
         --color-danger: 249 75 75;

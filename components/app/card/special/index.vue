@@ -1,5 +1,5 @@
 <script setup>
-let { bgImg, img, name, description, category, isMode, rate, isOnline, hasSield, to } = defineProps({
+let { bgImg, img, name, description, category, isMode, rate, isOnline, isChosen, to } = defineProps({
     bgImg: {
         type: String,
         default: ''
@@ -32,7 +32,7 @@ let { bgImg, img, name, description, category, isMode, rate, isOnline, hasSield,
         type: Boolean,
         default: false
     },
-    hasSield: {
+    isChosen: {
         type: Boolean,
         default: false
     },
@@ -57,7 +57,7 @@ let { bgImg, img, name, description, category, isMode, rate, isOnline, hasSield,
                     {{ description }}
                 </p>
                 <div class="flex items-end text-white tx-xs">
-                    <GenericIcon v-if="hasSield" name="shield_chek" class="text-success text-lg ml-2" />
+                    <GenericIcon v-if="isChosen" name="chosen" class="text-success text-lg ml-2" />
                     <span class="block">
                         {{ category }}
                     </span>

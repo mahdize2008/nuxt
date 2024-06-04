@@ -12,7 +12,7 @@ let { items } = defineProps({
         <div class="container">
             <Swiper class="mb-6" :modules="[SwiperNavigation]" :navigation="{nextEl:'.spacial-slider-next-btn',prevEl:'.spacial-slider-prev-btn'}" :slidesPerView="3" :spaceBetween="16">
                 <SwiperSlide v-for="(item, index) in items" :key="index">
-                    <AppCardSpecial :to="item.to" :isMode="item.isMode" :isOnline="item.isOnline" :hasSield="item.hasSield"
+                    <AppCardSpecial :to="item.to" :isMode="item.isMode" :isOnline="item.isOnline" :isChosen="item.isChosen"
                         :bgImg="item.bgImg" :img="item.img" :name="item.name" :description="item.description"
                         :category="item.category" :rate="item.rate" />
                 </SwiperSlide>

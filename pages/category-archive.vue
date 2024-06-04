@@ -101,7 +101,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: false,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -112,7 +112,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: false,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -123,7 +123,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: false,
+        isChosen: false,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -134,7 +134,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -145,7 +145,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -156,7 +156,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -167,7 +167,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",
@@ -178,7 +178,7 @@ let normalSliderItems = [
     {
         to: '/design-system',
         isOnline: true,
-        hasSield: true,
+        isChosen: true,
         bgImg: "/img/background-img-1.png",
         img: "/img/img-5.png",
         name: "کلش رویال",

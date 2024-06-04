@@ -23,7 +23,7 @@ let { items, headerSection } = defineProps({
                 :iconName="headerSection.iconName" :iconPathCount="headerSection.iconPathCount" />
             <Swiper :modules="[SwiperNavigation]" :navigation="{nextEl:'.swiper-next-btn',prevEl:'.swiper-prev-btn'}" :slidesPerView="7" class="!p-[60px] !-m-[60px]" :spaceBetween="16">
                 <SwiperSlide v-for="(item, index) in items" :key="index">
-                    <AppCardNormal :to="item.to" :isOnline="item.isOnline" :hasSield="item.hasSield" :bgImg="item.bgImg"
+                    <AppCardNormal :to="item.to" :isOnline="item.isOnline" :isChosen="item.isChosen" :bgImg="item.bgImg"
                         :img="item.img" :name="item.name" :description="item.description" :category="item.category"
                         :rate="item.rate" />
                 </SwiperSlide>

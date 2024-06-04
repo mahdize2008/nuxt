@@ -28,7 +28,7 @@ let {title,category,img,description}=defineProps({
                 </h2>
                 <ul class="flex items-center">
                     <li class="ml-2.5 last:ml-0" v-for="(item,index) in category" :key="index">
-                        <GenericTag :to="item.to">
+                        <GenericTag hasHover :to="item.to">
                             {{ item.title }}
                         </GenericTag>
                     </li>

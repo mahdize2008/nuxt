@@ -19,7 +19,7 @@ let { items, paginationItems } = defineProps({
         </h2>
         <div class="flex flex-wrap items-start !p-[60px] !-m-[65px] !-mb-[35px]">
             <div v-for="(item, index) in items" :key="index" class="w-[calc(100%/7)] p-[5px]">
-                <AppCardNormal :to="item.to" :isOnline="item.isOnline" :hasSield="item.hasSield"
+                <AppCardNormal :to="item.to" :isOnline="item.isOnline" :isChosen="item.isChosen"
                         :bgImg="item.bgImg" :img="item.img" :name="item.name" :description="item.description"
                         :category="item.category" :rate="item.rate" />
             </div>
