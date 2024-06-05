@@ -4,7 +4,7 @@ let {to,hasHover,theme}=defineProps({
         type:String,
         default:'success',
         validator: (value) => {
-            return ['success', 'dark','light'].includes(value);
+            return ['success', 'dark','light','danger','secondary'].includes(value);
         }
     },
     hasHover:{
@@ -45,6 +45,20 @@ function setTheme(){
         @apply bg-primary-gamma text-primary-alpha
     }
     .tag-light.hasHover{
-        @apply hover:bg-white/50 hover:text-black
+        @apply hover:bg-primary-beta text-primary
+    }
+
+    .tag-danger{
+        @apply bg-danger-alpha text-danger
+    }
+    .tag-danger.hasHover{
+        @apply hover:bg-danger hover:text-danger-alpha
+    }
+
+    .tag-secondary{
+        @apply bg-secondary-light text-secondary
+    }
+    .tag-secondary.hasHover{
+        @apply hover:bg-secondary hover:text-white
     }
 </style>

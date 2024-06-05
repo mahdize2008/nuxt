@@ -19,22 +19,22 @@ let properties = [
     },
     {
         title: 'سپر رویدینو',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'پرداخت درون برنامه‌ای',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'رایگان',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'مود شده',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     }
 ]
@@ -82,22 +82,22 @@ let product = {
 let developerSupport = [
     {
         title: 'صفحه گوگل پلی',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'وبسایت توسعه دهنده',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'حریم خصوصی',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0
     },
     {
         title: 'ایمیل پشتیبانی',
-        icon: 'shield_chek',
+        icon: 'shield_check',
         iconPathCount: 0,
         subtitle: 'Info@Roidino.ir'
     },

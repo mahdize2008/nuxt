@@ -16,7 +16,7 @@ let { rate , users } = defineProps({
     <div class="flex items-center justify-between">
         <div class="flex flex-col items-center w-fit">
             <div class="text-25xl text-primary font-medium mb-1 leading-none">
-                ۴.۷
+                {{ rate }}
             </div>
             <ul class="flex items-center -mx-[5px] mb-3">
                 <li class="px-[5px]">
@@ -36,7 +36,7 @@ let { rate , users } = defineProps({
                 </li>
             </ul>
             <div class="tx-xs text-primary-beta font-medium">
-                ۳۰۰ نظر کاربران
+                {{ users }} نظر کاربران
             </div>
         </div>
         <ul class="w-[600px]">

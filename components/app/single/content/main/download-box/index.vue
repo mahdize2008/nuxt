@@ -16,7 +16,7 @@ let { downloadItems } = defineProps({
                 :isAutoSetup="item.isAutoSetup" :isMode="item.isMode" />
             <li class="p-2">
                 <div :href="link" class="flex items-center w-full bg-danger-alpha rounded-xl px-4 h-20">
-                    <GenericIcon name="shield_chek" class="text-danger text-xl ml-3.5" />
+                    <GenericIcon name="shield_check" class="text-danger text-xl ml-3.5" />
                     <h3 class="tx-sm font-medium text-danger">
                         لینک دانلود به‌دستور کارگروه مصادیق و محتوای مجرمانه حذف گردید
                     </h3>
@@ -26,12 +26,12 @@ let { downloadItems } = defineProps({
 
         <ul class="flex items-center">
             <li class="ml-2.5 last:ml-0">
-                <GenericBtn iconName="shield_chek" lightness>
+                <GenericBtn iconName="shield_check" lightness>
                     گزارش خرابی لینک
                 </GenericBtn>
             </li>
             <li class="ml-2.5 last:ml-0">
-                <GenericBtn iconName="shield_chek" lightness>
+                <GenericBtn iconName="shield_check" lightness>
                     گزارش مشکل
                 </GenericBtn>
             </li>

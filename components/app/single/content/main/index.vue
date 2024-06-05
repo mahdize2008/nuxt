@@ -16,5 +16,6 @@ let {mainSliderItems,downloadItems}=defineProps({
         <AppSingleContentMainIntroductionBox class="mb-8"/>
         <AppSingleContentMainDownloadBox class="mb-8" :downloadItems="downloadItems"/>
         <AppSingleContentMainCommentsBox class="mb-8" :downloadItems="downloadItems"/>
+        <AppSingleContentMainMedia class="mb-8" :downloadItems="downloadItems"/>
     </div>
 </template>

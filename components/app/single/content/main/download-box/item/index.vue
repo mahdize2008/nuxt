@@ -58,7 +58,7 @@ let {title , link , qrcode , size , isGooglePalyLink , isAutoSetup , isMode}=def
         </a>
         <a v-if="isAutoSetup" :href="link"
             class="flex items-center grow rounded-xl px-4 h-20 bg-secondary">
-            <GenericIcon name="shield_chek" class="text-white text-xl ml-3.5" />
+            <GenericIcon name="shield_check" class="text-white text-xl ml-3.5" />
             <div>
                 <h3 class="tx-sm font-medium text-white mb-1">
                     {{ title }}
@@ -77,7 +77,7 @@ let {title , link , qrcode , size , isGooglePalyLink , isAutoSetup , isMode}=def
         </a>
         <a v-if="isGooglePalyLink" :href="link"
             class="flex items-center group hover:bg-success hover:border-success transition-all grow rounded-xl px-4 h-20 border-2 border-primary-tetha">
-            <GenericIcon name="shield_chek" class="text-primary transition-all group-hover:text-white text-md ml-3.5" />
+            <GenericIcon name="shield_check" class="text-primary transition-all group-hover:text-white text-md ml-3.5" />
             <div class="tx-xs text-primary-beta font-medium group-hover:text-white/70 transition-all">
                 <h3 class="tx-sm font-medium text-primary  group-hover:text-white transition-all mb-1">
                     دانلود از طریق گوگل پلی

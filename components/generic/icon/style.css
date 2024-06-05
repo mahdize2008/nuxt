@@ -38,6 +38,53 @@ i .path1 {
     @apply !relative
 }
 
+.icon-contact-us:before {
+  content: "\e945";
+}
+.icon-roidino1 .path1:before {
+  content: "\e93c";
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path2:before {
+  content: "\e93d";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path3:before {
+  content: "\e93e";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path4:before {
+  content: "\e93f";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path5:before {
+  content: "\e940";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path6:before {
+  content: "\e941";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path7:before {
+  content: "\e942";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
+.icon-roidino1 .path8:before {
+  content: "\e943";
+  margin-left: -4.1171875em;
+  color: rgb(10, 198, 36);
+}
+.icon-roidino1 .path9:before {
+  content: "\e944";
+  margin-left: -4.1171875em;
+  color: rgb(53, 57, 94);
+}
 .icon-share .path1:before {
   content: "\e92b";
   color: rgb(10, 198, 36);
@@ -221,7 +268,7 @@ i .path1 {
 .icon-wifi:before {
   content: "\e92f";
 }
-.icon-shield_chek:before {
+.icon-shield_chcek:before {
   content: "\e930";
 }
 .icon-signal .path1:before {
@@ -254,6 +301,9 @@ i .path1 {
 }
 .icon-left:before {
   content: "\e924";
+}
+.icon-like:before {
+  content: "\e93b";
 }
 .icon-share1 .path1:before {
   content: "\e92a";

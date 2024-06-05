@@ -104,17 +104,14 @@ let tags=ref([
                     </li>
                 </ul>
             </div>
+            
         </div>
-        <div @click="showMore=!showMore" class="cursor-pointer p-4 w-fit mx-auto rounded-full border-2 border-primary-tetha mb-4">
-            <div v-if="!showMore" class="flex items-center tx-xs font-medium text-primary ">
-                <span>مشاهده بیشتر</span>
-                <GenericIcon name="down" class="text-4xs text-primary mr-3.5"/>
-            </div>
-            <div v-if="showMore" class="flex items-center tx-xs font-medium text-primary ">
-                <span v-if="showMore">مشاهده کمتر</span>
-               <GenericIcon v-if="showMore" name="up" class="text-4xs text-primary mr-3.5"/>
-            </div>
-        </div>
+        <GenericBtn class="mx-auto !mb-4 px-4" v-if="!showMore" @click="showMore = !showMore" outline lightness iconLeftSide iconName="down" rounded>
+            مشاهده بیشتر
+        </GenericBtn>
+        <GenericBtn class="mx-auto !mb-4 px-4" v-if="showMore" @click="showMore = !showMore" outline lightness iconLeftSide iconName="up" rounded>
+            مشاهده کمتر
+        </GenericBtn>
         <ul class="flex items-center -m-[5px]">
             <li class="p-[5px]" v-for="(tag , index) in tags" :key="index">
                 <GenericTag :to="tag.to">
