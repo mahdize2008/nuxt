@@ -8,6 +8,6 @@ let {items}=defineProps({
 </script>
 <template>
     <div>
-        <GenericRoute :items="items"/>
+        <GenericBreadcrumb :items="items"/>
     </div>
 </template>

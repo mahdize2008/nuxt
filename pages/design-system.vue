@@ -167,7 +167,7 @@ let paginationItems = [
 
     
     <div class="container mb-between-section">
-        <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline hasSield bgImg="/img/background-img-1.png"
+        <AppCardSpecial class="!w-1/3" to="/design-system" isMode isOnline isChosen bgImg="/img/background-img-1.png"
             img="/img/img-4.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 
@@ -177,7 +177,7 @@ let paginationItems = [
     </div>
 
     <div class="container mb-between-section">
-        <AppCardNormal to="/design-system" class="!w-[13%]" isOnline hasSield bgImg="/img/background-img-1.png"
+        <AppCardNormal to="/design-system" class="!w-[13%]" isOnline isChosen bgImg="/img/background-img-1.png"
             img="/img/img-5.png" name="کلش رویال" description="Clash Royale" category="استراتژیک" :rate="5.1" />
     </div>
 

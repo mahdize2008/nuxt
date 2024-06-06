@@ -51,7 +51,7 @@ let {title,subtitle,category,grouping,link , iconName , iconPathCount} = defineP
         </ul>
         <ul v-if="category" class="-mx-3 mr-6 flex items-center justify-center">
             <li v-for="(item , index) in category" :key="index" class="ml-2.5 last:ml-0">
-                <GenericTag :to="item.to">
+                <GenericTag hasHover :to="item.to">
                     {{ item.title }}
                 </GenericTag>
             </li>

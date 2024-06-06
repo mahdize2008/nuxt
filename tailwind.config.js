@@ -36,10 +36,17 @@ export default {
       'primary-landa': 'rgb(var(--color-primary-landa) / <alpha-value>)',
 
 
+      'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
+      'secondary-alpha': 'rgb(var(--color-secondary-alpha) / <alpha-value>)',
+      'secondary-light': 'rgb(var(--color-secondary-light) / <alpha-value>)',
+
+
       success: 'rgb(var(--color-success) / <alpha-value>)',
       'success-alpha': 'rgb(var(--color-success-alpha) / <alpha-value>)',
+      'success-beta': 'rgb(var(--color-success-beta) / <alpha-value>)',
 
       warning: 'rgb(var(--color-warning) / <alpha-value>)',
+      'warning-alpha': 'rgb(var(--color-warning-alpha) / <alpha-value>)',
 
       danger: 'rgb(var(--color-danger) / <alpha-value>)',
       'danger-alpha': 'rgb(var(--color-danger-alpha) / <alpha-value>)',
@@ -60,6 +67,7 @@ export default {
       '4xl': '28px',
       '5xl': '30px',
       '15xl': '50px',
+      '25xl': '70px',
     },
     borderRadius: {
       'none': '0',
@@ -82,6 +90,8 @@ export default {
     extend: {
       backgroundImage: {
         'success-gradient': "linear-gradient(250deg, #0AC624 26.31%, #00ACB7 98.09%)",
+        'lighter-gradient': "linear-gradient(180deg, #F9F9FF 0%, #FFF 100%)",
+        'single-game-gradient': "radial-gradient(51.62% 95.32% at 41.98% 8.16%, rgba(46, 50, 88, 0.26) 0%, #1A1E3D 100%)",
       }
     }
   },

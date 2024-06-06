@@ -38,7 +38,7 @@ let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, ligh
         type: String,
         default: 'primary',
         validator: (value) => {
-            return ['primary', 'success'].includes(value);
+            return ['primary', 'success','dark'].includes(value);
         },
     },
     lightness: {
@@ -83,6 +83,17 @@ function setMode() {
     @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-sm text-white font-medium cursor-pointer rounded-lg
 }
 
+.v-btn-icon{
+    @apply text-md
+}
+
+i.icon-left,
+i.icon-right,
+i.icon-up,
+i.icon-down
+{
+    @apply !text-3xs
+}
 
 /* BTN-SQUARE */
 .btn.btn-square {
@@ -98,9 +109,10 @@ function setMode() {
     @apply bg-success text-white
 }
 
-.v-btn-icon{
-    @apply text-2xl
+.btn.btn-dark {
+    @apply bg-black/50 text-white
 }
+
 
 .btn.btn-primary.btn-lightness:not(.btn-outline) {
     @apply bg-primary-tetha text-primary
