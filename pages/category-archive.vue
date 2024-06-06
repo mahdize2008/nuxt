@@ -318,7 +318,7 @@ let accordionItems = [
 <template>
 
     <!-- START-ROUTE -->
-    <SectionsRoute class="container mb-10 mt-4" :items="route"/>
+    <SectionsBreadcrumb class="container mb-10 mt-4" :items="route"/>
     <!-- END-ROUTE -->
 
     <!-- START-MAIN-HOME-PAGE -->

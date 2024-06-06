@@ -33,9 +33,9 @@ let { properties, information, title, subtitle, isSpacial, isChosen, tags } = de
 </script>
 
 <template>
-    <div class=" py-[50px] border-b-public-section">
+    <div class="py-[50px] border-b-public-section bg-lighter-gradient">
         <div class="container flex items-center">
-            <div class="flex items-start mb-6">
+            <div class="flex items-start">
                 <img src="/img/img-6.png" class="w-[150px] h-[150px] rounded-4xl ml-6" alt="">
                 <div>
                     <div class="flex items-center mb-1">

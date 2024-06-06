@@ -1,14 +1,10 @@
 <script setup>
-let { information, title,type, subtitle,isChosen, developerSupport } = defineProps({
+let { information, title, subtitle,isChosen, developerSupport } = defineProps({
     information: {
         type: Array,
         default: []
     },
     title: {
-        type: String,
-        default: ''
-    },
-    type: {
         type: String,
         default: ''
     },
@@ -87,10 +83,14 @@ let apps = [
         to:'/'
     }
 ]
+
+import { inject } from 'vue'
+
+const type = inject('type')
 </script>
 
 <template>
-    <div class="p-4 w-[20%]">
+    <div class="p-4 w-[20%] sticky top-0">
         <div v-if="type==='game'" class="p-5 rounded-xl border border-primary-tetha mb-11">
             <div class="flex items-start mb-5">
                 <img src="/img/img-6.png" class="w-20 h-20 rounded-4xl ml-6" alt="">

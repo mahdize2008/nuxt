@@ -15,6 +15,8 @@ let route = [
     }
 ]
 
+
+
 let properties = [
     {
         title: 'نسخه ۱.۰.۰'
@@ -181,6 +183,8 @@ let downloadItems = [
     }
 ]
 
+
+
 let normalSliderItems = [
     {
         to: '/design-system',
@@ -333,27 +337,24 @@ let accordionItems = [
     },
 ]
 
-let type=ref('app')
+let type=ref('game')
+
+
+import { provide } from 'vue'
+
+provide( 'type', type)
 
 </script>
 
 <template>
     <!-- START-ROUTE -->
-    <SectionsRoute class="container !my-2.5" :items="route" />
+    <SectionsBreadcrumb class="container !my-2.5" :items="route" />
     <!-- END-ROUTE -->
 
+    
     <!-- START-SINGLE-HEADER -->
-    <AppSingleHeaderGame v-if="type==='game'" class="mb-between-section" :title="product.title" :tags="product.tags" :subtitle="product.subtitle"
-        :isSpacial="product.isSpacial" :isChosen="product.isChosen" :properties="properties" :information="information" />
+    <AppSingle class="mb-between-section" :product="product" :developerSupport="developerSupport" :mainSliderItems="mainSliderItems" :downloadItems="downloadItems" :properties="properties" :information="information" />
     <!-- END-SINGLE-HEADER -->
-
-    <!-- START-SINGLE-HEADER -->
-    <AppSingleHeaderApp v-if="type==='app'" class="mb-between-section" :title="product.title" :tags="product.tags" :subtitle="product.subtitle"
-        :isSpacial="product.isSpacial" :isChosen="product.isChosen" :properties="properties" :information="information" />
-    <!-- END-SINGLE-HEADER -->
-
-    <AppSingleContent :type="type" :downloadItems="downloadItems" :mainSliderItems="mainSliderItems" :developerSupport="developerSupport"
-        :product="product" :information="information" />
 
     <!-- START-APPS-NORMAL-SLIDER -->
     <SectionsAppNormalSlider :items="normalSliderItems" hasSwiperBtn

@@ -33,9 +33,9 @@ let { properties, information, title, subtitle, isSpacial, isChosen, tags } = de
 </script>
 
 <template>
-    <div class="relative">
-        <img src="/img/back-3.png" class="w-full" alt="">
-        <div class="w-full h-full absolute top-0 right-0 z-10" style="background: radial-gradient(51.62% 95.32% at 41.98% 8.16%, rgba(46, 50, 88, 0.26) 0%, #1A1E3D 100%)"></div>
+    <div class="relative overflow-hidden">
+        <img src="/img/back-3.png" class="w-full blur-[20px]" alt="">
+        <div class="w-full h-full absolute top-0 right-0 z-10 bg-single-game-gradient"></div>
         <div class="absolute w-full bottom-[60px] right-0 z-20">
             <div class="container">
                 <div class="flex items-start mb-6">

@@ -1,9 +1,5 @@
 <script setup>
-let { type, information, product, developerSupport, mainSliderItems ,downloadItems } = defineProps({
-    type: {
-        type: String,
-        default: 'game'
-    },
+let {  information, product, developerSupport, mainSliderItems ,downloadItems } = defineProps({
     information: {
         type: Array,
         default: []
@@ -31,7 +27,7 @@ let { type, information, product, developerSupport, mainSliderItems ,downloadIte
     <div class="container mb-between-section">
         <div class="flex items-start -m-4">
             <AppSingleContentMain :downloadItems="downloadItems" :mainSliderItems="mainSliderItems"/>
-            <AppSingleContentSidebar :type="type" :developerSupport="developerSupport" :title="product.title" :tags="product.tags" :subtitle="product.subtitle" :isSpacial="product.isSpacial" :isChosen="product.isChosen" :information="information"/>
+            <AppSingleContentSidebar :developerSupport="developerSupport" :title="product.title" :tags="product.tags" :subtitle="product.subtitle" :isSpacial="product.isSpacial" :isChosen="product.isChosen" :information="information"/>
         </div>
     </div>
 </template>

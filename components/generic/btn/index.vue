@@ -83,6 +83,17 @@ function setMode() {
     @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-sm text-white font-medium cursor-pointer rounded-lg
 }
 
+.v-btn-icon{
+    @apply text-md
+}
+
+i.icon-left,
+i.icon-right,
+i.icon-up,
+i.icon-down
+{
+    @apply !text-3xs
+}
 
 /* BTN-SQUARE */
 .btn.btn-square {
@@ -102,9 +113,6 @@ function setMode() {
     @apply bg-black/50 text-white
 }
 
-.v-btn-icon{
-    @apply text-2xl
-}
 
 .btn.btn-primary.btn-lightness:not(.btn-outline) {
     @apply bg-primary-tetha text-primary

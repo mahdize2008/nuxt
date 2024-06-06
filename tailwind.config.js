@@ -90,6 +90,8 @@ export default {
     extend: {
       backgroundImage: {
         'success-gradient': "linear-gradient(250deg, #0AC624 26.31%, #00ACB7 98.09%)",
+        'lighter-gradient': "linear-gradient(180deg, #F9F9FF 0%, #FFF 100%)",
+        'single-game-gradient': "radial-gradient(51.62% 95.32% at 41.98% 8.16%, rgba(46, 50, 88, 0.26) 0%, #1A1E3D 100%)",
       }
     }
   },
