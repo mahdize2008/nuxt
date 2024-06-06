@@ -1,4 +1,6 @@
 <script setup>
+import {ref} from 'vue'
+
 let route = [
     {
         title: 'صفحه اصلی',
@@ -78,7 +80,6 @@ let product = {
     tags: ['سوپرسل']
 }
 
-
 let developerSupport = [
     {
         title: 'صفحه گوگل پلی',
@@ -103,83 +104,236 @@ let developerSupport = [
     },
 ]
 
-let mainSliderItems=[
+let mainSliderItems = [
     {
-        isVideo:true,
-        videoSrc:'/',
-        src:'/img/img-10.png',
-        alt:'img'
+        isVideo: true,
+        videoSrc: '/',
+        src: '/img/img-10.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
     {
-        isVideo:false,
-        src:'/img/img-9.png',
-        alt:'img'
+        isVideo: false,
+        src: '/img/img-9.png',
+        alt: 'img'
     },
 ]
 
-let downloadItems=[
+let downloadItems = [
     {
-        title:'فایل نصبی اصلی بازی با لینک مستقیم',
-        qrcode:'/img/QRCode.png',
-        size:'۲۰۰ مگابایت',
-        link:'/',
-        isMode:true
+        title: 'فایل نصبی اصلی بازی با لینک مستقیم',
+        qrcode: '/img/QRCode.png',
+        size: '۲۰۰ مگابایت',
+        link: '/',
+        isMode: true
     },
     {
-        title:'فایل نصبی اصلی بازی با لینک مستقیم',
-        qrcode:'/img/QRCode.png',
-        size:'۲۰۰ مگابایت',
-        link:'/'
+        title: 'فایل نصبی اصلی بازی با لینک مستقیم',
+        qrcode: '/img/QRCode.png',
+        size: '۲۰۰ مگابایت',
+        link: '/'
     },
     {
-        title:'فایل نصبی اصلی بازی با لینک مستقیم',
-        qrcode:'/img/QRCode.png',
-        size:'۲۰۰ مگابایت',
-        link:'/'
+        title: 'فایل نصبی اصلی بازی با لینک مستقیم',
+        qrcode: '/img/QRCode.png',
+        size: '۲۰۰ مگابایت',
+        link: '/'
     },
     {
-        title:'فایل نصبی اصلی بازی با لینک مستقیم',
-        qrcode:'/img/QRCode.png',
-        size:'۲۰۰ مگابایت',
-        link:'/',
-        isAutoSetup:true
+        title: 'فایل نصبی اصلی بازی با لینک مستقیم',
+        qrcode: '/img/QRCode.png',
+        size: '۲۰۰ مگابایت',
+        link: '/',
+        isAutoSetup: true
     },
     {
-        link:'/',
-        isGooglePalyLink:true
+        link: '/',
+        isGooglePalyLink: true
     }
 ]
 
+let normalSliderItems = [
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: false,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: true,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    }
+]
+
+let articlesItems = [
+    {
+        to: "/design-system",
+        img: "/img/img-12.png",
+        title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است  بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است ",
+        date: "۲۰ فروردین ۱۴۰۳"
+    },
+    {
+        hasVideo: false,
+        to: "/design-system",
+        img: "/img/img-12.png",
+        title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است",
+        date: "۲۰ فروردین ۱۴۰۳"
+    },
+    {
+        to: "/design-system",
+        img: "/img/img-12.png",
+        title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است",
+        date: "۲۰ فروردین ۱۴۰۳"
+    },
+    {
+        to: "/design-system",
+        img: "/img/img-12.png",
+        title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است",
+        date: "۲۰ فروردین ۱۴۰۳"
+    },
+    {
+        to: "/design-system",
+        img: "/img/img-12.png",
+        title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است",
+        date: "۲۰ فروردین ۱۴۰۳"
+    }
+]
+
+let accordionItems = [
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+    {
+        title: 'بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است؟',
+        text: 'به‌نظر می‌رسد عملکرد بازی به‌شدت ناامیدکننده بوده و ۶۷ درصد کمتر از برای اکتیویژن و تیم سازنده درآمدزایی داشته است',
+    },
+]
+
+let type=ref('app')
 
 </script>
 
@@ -189,9 +343,46 @@ let downloadItems=[
     <!-- END-ROUTE -->
 
     <!-- START-SINGLE-HEADER -->
-    <AppSingleHeaderGame class="mb-between-section" :title="product.title" :tags="product.tags" :subtitle="product.subtitle"
+    <AppSingleHeaderGame v-if="type==='game'" class="mb-between-section" :title="product.title" :tags="product.tags" :subtitle="product.subtitle"
         :isSpacial="product.isSpacial" :isChosen="product.isChosen" :properties="properties" :information="information" />
     <!-- END-SINGLE-HEADER -->
 
-    <AppSingleContent :downloadItems="downloadItems" :mainSliderItems="mainSliderItems" :developerSupport="developerSupport" :product="product" :information="information" />
+    <!-- START-SINGLE-HEADER -->
+    <AppSingleHeaderApp v-if="type==='app'" class="mb-between-section" :title="product.title" :tags="product.tags" :subtitle="product.subtitle"
+        :isSpacial="product.isSpacial" :isChosen="product.isChosen" :properties="properties" :information="information" />
+    <!-- END-SINGLE-HEADER -->
+
+    <AppSingleContent :type="type" :downloadItems="downloadItems" :mainSliderItems="mainSliderItems" :developerSupport="developerSupport"
+        :product="product" :information="information" />
+
+    <!-- START-APPS-NORMAL-SLIDER -->
+    <SectionsAppNormalSlider :items="normalSliderItems" hasSwiperBtn
+        :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
+        class="mb-between-section container" />
+    <!-- END-APPS-NORMAL-SLIDER -->
+
+    <!-- START-APPS-NORMAL-SLIDER -->
+    <SectionsAppNormalSlider :items="normalSliderItems" hasSwiperBtn
+        :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4 }"
+        class="mb-between-section container" />
+    <!-- END-APPS-NORMAL-SLIDER -->
+
+    <!-- START-APPS-NORMAL-SLIDER -->
+    <SectionsAppNormalSlider :items="normalSliderItems" hasSwiperBtn
+        :headerSection="{ title: 'برنامه‌ها', iconName: 'gamepad', iconPathCount: 4 }"
+        class="mb-between-section container" />
+    <!-- END-APPS-NORMAL-SLIDER -->
+
+    <!-- START-ARTICLES -->
+    <SectionsArticleVertical class="mb-between-section" :items="articlesItems" :headerSection="{ title: 'برنامه‌ها', link: '/' }" />
+    <!-- END-ARTICLES -->
+
+    <!-- START-DOWNLOAD-APP -->
+    <SectionsDownloadApplication class="container mb-between-section" />
+    <!-- END-DOWNLOAD-APP -->
+    
+    <!-- START-FAQ -->
+    <SectionsFaq class="container mb-between-section" to="/" :items="accordionItems"
+    :headerSection="{ title: 'سوالات متداول', subtitle: 'سوالات پرتکرار شما'}" />
+    <!-- END-FAQ -->
 </template>

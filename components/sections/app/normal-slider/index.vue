@@ -8,7 +8,7 @@ let { items, headerSection } = defineProps({
         type: Object,
         default: {}
     },
-    isSwiperBtn: {
+    hasSwiperBtn: {
         type: Boolean,
         default: false
     }
@@ -28,8 +28,8 @@ let { items, headerSection } = defineProps({
                         :rate="item.rate" />
                 </SwiperSlide>
             </Swiper>
-            <GenericBtn v-if="isSwiperBtn" iconName="right" class="swiper-btn swiper-prev-btn transition-all absolute top-1/2 -translate-y-1/2 right-2.5 z-10" lightness rounded square />
-            <GenericBtn v-if="isSwiperBtn" iconName="left" class="swiper-btn swiper-next-btn transition-all absolute top-1/2 -translate-y-1/2 left-2.5 z-10" lightness rounded square />
+            <GenericBtn v-if="hasSwiperBtn" iconName="right" class="swiper-btn swiper-prev-btn transition-all absolute top-1/2 -translate-y-1/2 right-2.5 z-10" lightness rounded square />
+            <GenericBtn v-if="hasSwiperBtn" iconName="left" class="swiper-btn swiper-next-btn transition-all absolute top-1/2 -translate-y-1/2 left-2.5 z-10" lightness rounded square />
         </div>
     </div>
 </template>

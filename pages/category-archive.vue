@@ -340,31 +340,31 @@ let accordionItems = [
 
 
             <!-- START-HAS-DATA-GAMES -->
-            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
             :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-HAS-DATA-GAMES -->
 
             <!-- START-ACTION-GAMES -->
-            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
             :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-ACTION-GAMES -->
 
             <!-- START-HAS-DATA-GAMES -->
-            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
             :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-HAS-DATA-GAMES -->
 
             <!-- START-ACTION-GAMES -->
-            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
             :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-ACTION-GAMES -->
 
             <!-- START-REQUIRED-APPS -->
-            <SectionsAppNormalSlider isSwiperBtn :items="normalSliderItems"
+            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
             :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
             class="mb-between-section last:!mb-0" />
             <!-- END-REQUIRED-APPS -->

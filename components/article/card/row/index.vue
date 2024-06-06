@@ -1,5 +1,5 @@
 <script setup>
-let { imgSrc, title, description, date, hasVideo, to } = defineProps({
+let { imgSrc, title, date, hasVideo, to } = defineProps({
     imgSrc: {
         type: String,
         default: ''

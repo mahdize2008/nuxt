@@ -1,5 +1,5 @@
 <script setup>
-let { title, subtitle, category, grouping, link, iconName, iconPathCount } = defineProps({
+let { title, link } = defineProps({
     title: {
         type: String,
         default: ''
