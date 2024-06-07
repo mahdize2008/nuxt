@@ -1,6 +1,6 @@
 <script setup>
 import {ref} from 'vue';
-    let {name , text ,subtitle, img , rate , isSuggest , time, replies,likes}=defineProps({
+    let {name , text ,subtitle, img , rate , isSuggest , time, replies,likes,isRoidinoComment}=defineProps({
         name:{
             type:String,
             default:''
@@ -23,7 +23,7 @@ import {ref} from 'vue';
         },
         isSuggest:{
             type:Boolean,
-            default:true
+            default:false
         },
         time:{
             type:String,
@@ -36,6 +36,10 @@ import {ref} from 'vue';
         likes:{
             type:Number,
             default:0
+        },
+        isRoidinoComment:{
+            type:Boolean,
+            default:false
         }
     })
 
@@ -57,7 +61,10 @@ import {ref} from 'vue';
 </script>
 <template>
     <div>
-        <div class="tx-xs text-primary font-medium mb-2.5 flex items-center">
+
+        <AppSingleContentMainOverviewCommentItem class="mb-2.5 last:mb-0" :isRoidinoComment="isRoidinoComment" :name="name" :subtitle="subtitle" :text="text" :img="img" :rate="rate" :isSuggest="isSuggest" :time="time" :likes="likes"/>
+
+        <!-- <div class="tx-xs text-primary font-medium mb-2.5 flex items-center">
             <img :src="img" class="rounded-full w-10 h-10 ml-2.5" alt="">
             <span class="ml-3">
                 {{name}}
@@ -99,11 +106,11 @@ import {ref} from 'vue';
                 <GenericIcon name="like" class="text-lg"/>
             </div>
             {{ likes }} کاربر این نظر را مفید دانسته‌اند
-        </div>
+        </div> -->
 
         <!-- START-REPLIES -->
         <div class="pr-10 mt-2.5">
-            <AppSingleContentMainCommentsBoxCommentReply class="mb-2.5 last:mb-0" v-for="(reply , index) in replies" :effectiveReply="reply.effectiveReply" :isRoidinoComment="reply.isRoidinoComment" :key="index" :name="reply.name" :subtitle="reply.subtitle" :text="reply.text" :img="reply.img" :rate="reply.rate" :isSuggest="reply.isSuggest" :time="reply.time" :likes="reply.likes"/>
+            <AppSingleContentMainOverviewCommentItem class="mb-2.5 last:mb-0" v-for="(reply , index) in replies" isReply :effectiveReply="reply.effectiveReply" :isRoidinoComment="reply.isRoidinoComment" :key="index" :name="reply.name" :subtitle="reply.subtitle" :text="reply.text" :img="reply.img" :rate="reply.rate" :isSuggest="reply.isSuggest" :time="reply.time" :likes="reply.likes"/>
         </div>
         <!-- END-REPLIES -->
     </div>
