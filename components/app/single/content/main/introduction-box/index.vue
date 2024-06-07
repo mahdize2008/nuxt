@@ -104,7 +104,6 @@ let tags=ref([
                     </li>
                 </ul>
             </div>
-            
         </div>
         <GenericBtn class="mx-auto !mb-4 px-4" v-if="!showMore" @click="showMore = !showMore" outline lightness iconLeftSide iconName="down" rounded>
             مشاهده بیشتر

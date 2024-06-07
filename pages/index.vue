@@ -180,49 +180,49 @@ let normalSliderItems = [
 let companiesItems = [
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
