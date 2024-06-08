@@ -245,7 +245,7 @@ let accordionItems = [
 
     <!-- START-DEVELOPERS-VERTICAL-SLIDER -->
     <SectionsDeveloperVerticalSlider class="mb-between-section container" :developers="developersVerticalSlider"
-        :headerSection="{ title: 'توسعه‌دهندگان منتخب', subtitle: 'محبوب ترین توسعه‌دهنده‌های رویدینو' }" />
+        :headerSection="{ title: 'توسعه دهنده‌های ویژه', subtitle: 'محبوب ترین توسعه‌دهنده‌های رویدینو' }" />
     <!-- END-DEVELOPERS-VERTICAL-SLIDER -->
 
 
