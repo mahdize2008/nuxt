@@ -25,7 +25,7 @@ let { title, text, img, to, options } = defineProps({
 </script>
 
 <template>
-    <NuxtLink class="block p-5 rounded-4xl border-2 border-primary-tetha">
+    <NuxtLink :to="to" class="block p-5 rounded-4xl border-2 border-primary-tetha">
         <img :src="img" class="rounded-xl mb-5 w-full h-[290px] object-center object-cover">
         <h2 class="mb-2.5 tx-base text-primary font-medium">
             {{ title }}

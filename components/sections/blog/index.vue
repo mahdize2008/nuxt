@@ -14,7 +14,7 @@ let { articleSliderItems,articlesItems }=defineProps({
 </script>
 
 <template>
-    <div>
+    <div class="mb-between-section">
         <!-- START-ARTICLE-SLIDER-ITEMS -->
         <SectionsBlogHeader
             :articles="articleSliderItems" />
