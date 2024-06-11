@@ -136,7 +136,7 @@ let sidebarHasVideoArticles = [
 <template>
     <div class="p-4 w-fit sticky top-0">
         <div class="w-[245px]">
-            <SectionsBlogContentSidebarCategory class="mb-12 last:mb-0" :items="category" />
+            <GenericBlogCategory class="mb-12 last:mb-0" :items="category" />
             <SectionsBlogContentSidebarArticles class="mb-12 last:mb-0" header="مطالب مرتبط" :articles="sidebarArticles" />
             <SectionsBlogContentSidebarArticles class="mb-12 last:mb-0" header="مطالب ویدیویی"
                 :articles="sidebarHasVideoArticles" />

@@ -1,0 +1,95 @@
+<script setup>
+let contents=[
+    {
+        name:'مقدمه',
+        href:''
+    },
+    {
+        name:'تلاش برای بازگشت به ریشه‌ها',
+        href:''
+    },
+    {
+        name:'یک حشاشی واقعی',
+        href:''
+    },
+    {
+        name:'مبارزات سخت اما مخفی‌کاری در اوج',
+        href:''
+    }
+]
+</script>
+
+<template>
+    <div class="grow p-4">
+        <div class="p-10 rounded-xl border-2 border-primary-tetha">
+            <img src="/img/img-17.png" class="w-full aspect-video mb-8" />
+            <h1 class="tx-lg text-primary font-medium mb-2.5">
+                تست شخصیت‌شناسی DISC چیست و چرا باید این تست را انجام بدهیم؟
+            </h1>
+            <h2 class="tx-base text-primary-alpha font-medium mb-8">
+                لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
+            </h2>
+            <div class="flex items-center py-5 mb-10 border-y-2 border-y-primary-tetha">
+                <div class="flex items-center text-xs text-primary ml-8">
+                    <div class="w-11 h-11 rounded-full bg-black/15 ml-2"></div>
+                    نویسنده رویدینو
+                </div>
+                <ul class="flex items-center -m-4">
+                    <li class="p-4 flex items-center text-primary tx-xs">
+                        <GenericIcon name="youtube" class="text-xl text-primary-beta ml-2" />
+                        ۲۰ فروردین ۱۴۰۳
+                    </li>
+                    <li class="p-4 flex items-center text-primary tx-xs">
+                        <GenericIcon name="youtube" class="text-xl text-primary-beta ml-2" />
+                        ۲۰ فروردین ۱۴۰۳
+                    </li>
+                    <li class="p-4 flex items-center text-primary tx-xs">
+                        <GenericIcon name="youtube" class="text-xl text-primary-beta ml-2" />
+                        ۲۰ فروردین ۱۴۰۳
+                    </li>
+                    <li class="p-4 flex items-center text-primary tx-xs">
+                        <GenericIcon name="youtube" class="text-xl text-primary-beta ml-2" />
+                        ۲۰ فروردین ۱۴۰۳
+                    </li>
+                </ul>
+                <GenericBtn lightness rounded iconName="share1" :iconPathCount="5" iconLeftSide class="mr-auto">
+                    اشتراک گذاری
+                </GenericBtn>
+            </div>
+            <p class="tx-xs text-primary mb-10">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+                است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                متنوع است.
+            </p>
+            <SectionsBlogSingleMainContentsList class="mb-10" :contents="contents"/>
+            <div class="-m-2 flex h-[355px] mb-10">
+                <div class="w-1/2 p-2 h-full">
+                    <img src="/img/img-18.png" class="w-full h-full" alt="">
+                </div>
+                <div class="w-1/2 p-2 h-full">
+                    <img src="/img/img-18.png" class="w-full h-full" alt="">
+                </div>
+            </div>
+            <p class="tx-xs text-primary mb-10">
+                گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
+            </p>
+            <h1 class="tx-md mb-8">
+                لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
+            </h1>
+            <h2 class="tx-base mb-8">
+                لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
+            </h2>
+            <h3 class="tx-sm mb-8">
+                لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
+            </h3>
+            <h4 class="tx-xs mb-10">
+                لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
+            </h4>
+            <p class="tx-xs text-primary mb-10">
+                گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
+            </p>
+        </div>
+    </div>
+</template>

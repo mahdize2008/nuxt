@@ -50,7 +50,8 @@ export default {
 
       danger: 'rgb(var(--color-danger) / <alpha-value>)',
       'danger-alpha': 'rgb(var(--color-danger-alpha) / <alpha-value>)',
-
+      
+      'natural': 'rgb(var(--color-natural) / <alpha-value>)',
     },
     fontSize: {
       '4xs': '8px',

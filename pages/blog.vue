@@ -238,7 +238,7 @@ let accordionItems = [
 
     <!-- START-APPS-NORMAL-SLIDER -->
     <SectionsAppNormalSlider :items="normalSliderItems" hasSwiperBtn
-        :headerSection="{ title: 'بازی‌های محبوب', iconName: 'gamepad', iconPathCount: 4 }"
+        :headerSection="{ title: 'بازی‌های محبوب', iconName: 'gamepad', iconPathCount: 4,link:'/' }"
         class="mb-between-section container" />
     <!-- END-APPS-NORMAL-SLIDER -->
 

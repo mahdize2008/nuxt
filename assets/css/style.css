@@ -14,8 +14,7 @@
     html {
         --color-white: 255 255 255;
         --color-black: 0 0 0;
-
-        
+    
         /* PRIMARY */
         --color-primary: 53 57 94;
         --color-primary-alpha: 127 130 161;
@@ -41,6 +40,9 @@
         /* DANGER */
         --color-danger: 249 75 75;
         --color-danger-alpha: 255 237 237;
+        
+        
+        --color-natural: 249 249 255;
     }
 
     button{

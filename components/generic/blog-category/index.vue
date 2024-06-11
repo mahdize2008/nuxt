@@ -21,7 +21,7 @@ let show = ref(true)
         </div>
         <ul v-if="show" class="p-5 pt-0">
             <li v-for="(item, index) in items" :key="index" class="mb-2.5 last:mb-0">
-                <NuxtLink :to="item.to" class="block rounded-md text-primary hover:bg-success hover:text-white transition-all p-2.5 font-medium tx-xs ">
+                <NuxtLink :to="item.to" class="block rounded-md text-primary hover:bg-success hover:text-white transition-all px-2.5 py-[11px] font-medium tx-xs ">
                     {{item.title}}
                 </NuxtLink>
             </li>
