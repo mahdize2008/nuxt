@@ -111,6 +111,32 @@ let articles = [
         isSuggest: true
     }
 ]
+
+let app = {
+    download: '/',
+    name: 'کلش رویال',
+    img: '/img/img-4.png',
+    information: [
+        {
+            title: '۲۰۰۰ امتیاز',
+            text: '۵.۰',
+            icon: 'star',
+            iconPathCount: 0
+        },
+        {
+            title: 'نصب',
+            text: '+۵۰۰',
+        },
+        {
+            title: 'حجم',
+            text: '۹۹ مگابایت',
+        },
+        {
+            title: 'دسته‌بندی',
+            text: 'رانندگی',
+        }
+    ]
+}
 </script>
 
 <template>
@@ -244,47 +270,15 @@ let articles = [
                 تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
             </p>
 
+            <SectionsBlogSingleMainApp class="mb-10" :information="app.information" :download="app.name" :name="app.name"
+                :img="app.img" />
 
-            <img src="/img/img-6.png" class="w-[150px] h-[150px] rounded-4xl ml-6" alt="">
-                <div>
-                    <div class="flex items-center mb-1">
-                        <h2 class="tx-lg text-primary font-medium ml-1.5">
-                            {{ title }}
-                        </h2>
-                        <GenericIcon v-if="isChosen" name="checked" class="text-secondary-alpha text-sm" />
-                    </div>
-                    <p class="tx-xs font-medium text-primary-beta mb-3">
-                        {{ subtitle }}
-                    </p>
-                    <div class="flex items-center mb-5">
-                        <GenericTag v-for="(tag, index) in tags" :key="index" theme="light" class="ml-4">
-                            {{ tag }}
-                        </GenericTag>
-                        <div v-if="isSpacial" class="flex items-center text-success tx-xs ml-4">
-                            <GenericIcon name="chosen" class="text-success text-lg ml-1.5" />
-                            منتخب رویدینو
-                        </div>
-                        <ul class="flex items-center -m-4">
-                            <li v-for="(item, index) in properties" :key="index"
-                                class="p-4 flex items-center text-primary/70 tx-xs">
-                                <GenericIcon class="text-primary-alpha text-md ml-1.5" v-if="item.icon" :name="item.icon"
-                                    :pathCount="item.iconPathCount" />
-                                {{ item.title }}
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="flex -m-4">
-                        <li v-for="(item, index) in information" :key="index"
-                            class="p-4 relative flex flex-col items-center text-primary-alpha tx-xs after:w-0.5 after:h-[calc((100%-32px)/2)] after:bg-primary/10 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 last:after:hidden">
-                            <div class="flex items-center text-primary tx-sm font-medium mb-1.5">
-                                {{ item.text }}
-                                <GenericIcon class="text-xs text-warning mr-1" v-if="item.icon" :name="item.icon"
-                                    :pathCount="item.iconPathCount" />
-                            </div>
-                            {{ item.title }}
-                        </li>
-                    </ul>
-                </div>
-
+                <p class="tx-xs text-primary mb-10">
+                گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
+                گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
+                آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
+                تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
+            </p>
+        </div>
     </div>
-</div></template>
+</template>
