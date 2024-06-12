@@ -284,7 +284,6 @@ let articlesItems = [
         date: "۲۰ فروردین ۱۴۰۳"
     },
     {
-        hasVideo: false,
         to: "/design-system",
         img: "/img/img-12.png",
         title: "بازی کال‌آودیوتی موبایل وارزون شروع ضعیفی را داشته است",

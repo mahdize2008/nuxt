@@ -9,95 +9,250 @@ let route = [
     }
 ]
 
-let trendSliderItems = [
+let paginationItems = [
     {
-        to: "/design-system",
-        bgImg: "/img/teaser.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        rate: 5.1
+        iconName: 'right',
+        to:'/'
     },
     {
-        to: "/design-system",
-        bgImg: "/img/teaser.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        rate: 5.1
+        text: 1,
+        to:'/'
     },
     {
-        to: "/design-system",
-        bgImg: "/img/teaser.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        rate: 5.1
+        text: 2,
+        to:'/'
     },
     {
-        to: "/design-system",
-        bgImg: "/img/teaser.png",
-        img: "/img/img-4.png",
-        name: "کلش رویال",
-        description: "Clash Royale",
-        rate: 5.1
+        text: 3,
+        to:'/'
     },
+    {
+        iconName: 'left',
+        to:'/'
+    }
 ]
 
-let choiceItems = [
+let apps = [
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
     {
-        name: 'استراتژی',
-        img: '/img/category.png',
-        to: '/'
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
     },
-]
-
-let normalSliderItems = [
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
+    {
+        to: '/design-system',
+        isOnline: false,
+        isChosen: true,
+        bgImg: "/img/background-img-1.png",
+        img: "/img/img-5.png",
+        name: "کلش رویال",
+        description: "Clash Royale",
+        category: "استراتژیک",
+        rate: 5.1
+    },
     {
         to: '/design-system',
         isOnline: false,
@@ -191,49 +346,49 @@ let normalSliderItems = [
 let companiesItems = [
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
     },
     {
         to: "/design-system",
-        img: "/img/img-4.png",
+        img: "/img/brand.png",
         name: "کلش رویال",
         description: "Clash Royale",
         gradient: { from: '#FF1616', to: '#860000' }
@@ -352,41 +507,10 @@ let categoryHeader={
             <!-- END-CATEGORY-HEADER -->
 
 
-            <!-- START-TREND-SLIDER -->
-            <SectionsAppTrendSlider :items="trendSliderItems"
-                :headerSection="{ title: 'بازی‌های اندروید', subtitle: 'دانلود اپلیکیشن و بازی اندروید' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-TREND-SLIDER -->
-
-            <!-- START-HAS-DATA-GAMES -->
-            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
-                :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-HAS-DATA-GAMES -->
-
-            <!-- START-ACTION-GAMES -->
-            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
-                :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-ACTION-GAMES -->
-
-            <!-- START-HAS-DATA-GAMES -->
-            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
-                :headerSection="{ title: 'بازی‌های دیتادار', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'اکشن', to: '/' }, { title: 'رانندگی', to: '/' }, { title: 'مبارزه‌ای', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-HAS-DATA-GAMES -->
-
-            <!-- START-ACTION-GAMES -->
-            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
-                :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, category: [{ title: 'هیجانی', to: '/' }, { title: 'تیراندازی', to: '/' }, { title: 'مشت‌زنی', to: '/' }], link: '/' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-ACTION-GAMES -->
-
-            <!-- START-REQUIRED-APPS -->
-            <SectionsAppNormalSlider hasSwiperBtn :items="normalSliderItems"
-                :headerSection="{ title: 'بازی اکشن', iconName: 'gamepad', iconPathCount: 4, link: '/' }"
-                class="mb-between-section last:!mb-0" />
-            <!-- END-REQUIRED-APPS -->
+            <!-- START-TRNEDS-APP-NORMAL-SLIDER -->
+            <SectionsAppBox :paginationItems="paginationItems" :items="apps"
+            class="mb-between-section last:!mb-0" />
+            <!-- END-TRNEDS-APP-NORMAL-SLIDER -->
         </div>
     </div>
     <!-- START-MAIN-HOME-PAGE -->

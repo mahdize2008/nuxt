@@ -182,7 +182,7 @@ let paginationItems = [
     </div>
 
     <div class="container mb-between-section">
-        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/img-4.png" name="کلش رویال"
+        <DeveloperCardNormal to="/design-system" class="!w-[13%]" img="/img/brand.png" name="کلش رویال"
             description="Clash Royale" :gradient="{ from: '#FF1616', to: '#860000' }" />
     </div>
 
