@@ -20,8 +20,8 @@ let { items,headerSection ,to} = defineProps({
         <GenericHeaderSection :title="headerSection.title" :subtitle="headerSection.subtitle"
             :grouping="headerSection.grouping" :link="headerSection.link" :iconName="headerSection.iconName"
             :iconPathCount="headerSection.iconPathCount" />
-        <GenericAccordion :items="items" class="mb-6"/>
-        <div class="flex items-center tx-sm">
+        <GenericAccordion :items="items"/>
+        <div v-if="to" class="flex items-center tx-sm mt-6">
             پاسخ سوالتون رو پیدا نکردید؟ 
             <NuxtLink :to="to" class="tx-xs flex items-center text-success mr-4">
                 مشاهده همه سوالات متداول
