@@ -273,7 +273,8 @@ let app = {
             <SectionsBlogSingleMainApp class="mb-10" :information="app.information" :download="app.name" :name="app.name"
                 :img="app.img" />
 
-                <p class="tx-xs text-primary mb-10">
+                
+            <p class="tx-xs text-primary mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت

@@ -21,7 +21,7 @@ let { img, information, name, download } = defineProps({
 </script>
 
 <template>
-    <div class="flex items-center">
+    <div class="flex items-center border border-primary-tetha p-4 rounded-4xl">
         <div class="flex">
             <img :src="img" class="w-20 h-20 rounded-md ml-4" alt="">
             <div class="flex flex-col justify-between">
