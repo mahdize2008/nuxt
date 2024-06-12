@@ -52,6 +52,8 @@ export default {
       'danger-alpha': 'rgb(var(--color-danger-alpha) / <alpha-value>)',
       
       'natural': 'rgb(var(--color-natural) / <alpha-value>)',
+
+      'dark': 'rgb(var(--color-dark) / <alpha-value>)',
     },
     fontSize: {
       '4xs': '8px',
@@ -67,6 +69,11 @@ export default {
       '3xl': '26px',
       '4xl': '28px',
       '5xl': '30px',
+      '6xl': '32px',
+      '7xl': '34px',
+      '8xl': '36px',
+      '9xl': '38px',
+      '10xl': '40px',
       '15xl': '50px',
       '25xl': '70px',
     },

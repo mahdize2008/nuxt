@@ -112,6 +112,47 @@ let articles = [
     }
 ]
 
+let points1 = [
+    {
+        title: 'داستان چند شاخه‌ی گسترده',
+        listStyle: 'circle'
+    },
+    {
+        title: 'شخصیت‌پردازی عمیق',
+        listStyle: 'circle'
+    },
+    {
+        title: 'انیمیشن های جدید در قبل شروع بازی، بین نیمه و پایان بازی',
+        listStyle: 'circle'
+    },
+    {
+        title: 'انیمیشن های جدید در قبل شروع بازی، بین نیمه و پایان بازی',
+        listStyle: 'circle'
+    },
+    {
+        title: 'قابلیت تکرارپذیری زیاد',
+        listStyle: 'circle'
+    }
+]
+
+let points2 = [
+    {
+        title: 'داستان چند شاخه‌ی گسترده',
+        listStyle: 'circle'
+    },
+    {
+        title: 'شخصیت‌پردازی عمیق',
+        listStyle: 'circle'
+    },
+    {
+        title: 'انیمیشن های جدید در قبل شروع بازی، بین نیمه و پایان بازی',
+        listStyle: 'circle'
+    },
+    {
+        title: 'قابلیت تکرارپذیری زیاد',
+        listStyle: 'circle'
+    }
+]
 let app = {
     download: '/',
     name: 'کلش رویال',
@@ -137,6 +178,38 @@ let app = {
         }
     ]
 }
+
+
+import { ref } from 'vue'
+let comments = [
+    {
+        name: "امیرحسین صفری",
+        text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون.",
+        img: "/img/profile.png",
+        rate: 4,
+        time: "۲۷ فروردین ۱۴۰۳",
+        likes: 300
+    },
+    {
+        name: "امیرحسین صفری",
+        text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+        subtitle: "Samsung Galaxy S23FE",
+        img: "/img/profile.png",
+        rate: 4,
+        time: "۲۷ فروردین ۱۴۰۳",
+        replies: [
+            {
+                isRoidinoComment: true,
+                text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                time: "۲۷ فروردین ۱۴۰۳",
+                likes: 300,
+            }
+        ],
+        likes: 300
+    }
+]
+
+let showMore = ref(false)
 </script>
 
 <template>
@@ -176,7 +249,7 @@ let app = {
                     اشتراک گذاری
                 </GenericBtn>
             </div>
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
                 بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
                 است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
@@ -192,7 +265,7 @@ let app = {
                     <img src="/img/img-18.png" class="w-full h-full" alt="">
                 </div>
             </div>
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
@@ -210,7 +283,7 @@ let app = {
             <h4 class="tx-xs mb-10">
                 لورم ایپسوم، متن ساختگی با تولید نامفهوم در صنعت چاپ!
             </h4>
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
@@ -224,7 +297,7 @@ let app = {
                 <GenericLi v-for="(item, index) in listItems2" :key="index" :number="index + 1" :title="item.title"
                     :listStyle="item.listStyle" />
             </ul>
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
@@ -246,7 +319,7 @@ let app = {
                     متون بلکه روزنامه و مجله در ستون و سطرآنچنان است.
                 </figcaption>
             </article>
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
@@ -263,7 +336,7 @@ let app = {
                     :img="article.img" />
             </div>
 
-            <p class="tx-xs text-primary mb-10">
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
@@ -273,13 +346,166 @@ let app = {
             <SectionsBlogSingleMainApp class="mb-10" :information="app.information" :download="app.name" :name="app.name"
                 :img="app.img" />
 
-                
-            <p class="tx-xs text-primary mb-10">
+
+            <p class="tx-xs text-primary text-justify mb-10">
                 گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
                 گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
                 آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
                 تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
             </p>
+
+            <NuxtLink to="/"
+                class="tx-sm p-5 mx-auto border border-primary-tetha rounded-xl w-fit font-medium text-primary flex items-center mb-10">
+                <img src="/img/logo-2.png" class="ml-5 w-[30px]" />
+                دانلود از طریق رویدینو
+                <GenericIcon name="left" class="text-xs text-primary-beta mr-3.5" />
+            </NuxtLink>
+
+            <p class="tx-xs text-primary text-justify mb-10">
+                گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
+                گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
+                آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
+                تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
+            </p>
+
+            <ul class="-m-4 flex items-center mb-6">
+                <li class="p-4 grow">
+                    <NuxtLink to="/"
+                        class="w-full tx-sm p-5 border border-primary-tetha rounded-xl font-medium text-primary flex items-center justify-between">
+                        <img src="/img/img-20.png" class="ml-2 max-h-[32px]" />
+                        تماشا در یوتیوب
+                        <GenericIcon name="left" class="text-xs text-primary-beta mr-2" />
+                    </NuxtLink>
+                </li>
+                <li class="p-4 grow">
+                    <NuxtLink to="/"
+                        class="w-full tx-sm p-5 border border-primary-tetha rounded-xl font-medium text-primary flex items-center justify-between">
+                        <img src="/img/img-20.png" class="ml-2 max-h-[32px]" />
+                        تماشا از طریق نماگیت
+                        <GenericIcon name="left" class="text-xs text-primary-beta mr-2" />
+                    </NuxtLink>
+                </li>
+                <li class="p-4 grow">
+                    <NuxtLink to="/"
+                        class="w-full tx-sm p-5 border border-primary-tetha rounded-xl font-medium text-primary flex items-center justify-between">
+                        <img src="/img/img-20.png" class="ml-2 max-h-[32px]" />
+                        دانلود از طریق پارسی‌گیم
+                        <GenericIcon name="left" class="text-xs text-primary-beta mr-2" />
+                    </NuxtLink>
+                </li>
+                <li class="p-4 grow">
+                    <NuxtLink to="/"
+                        class="w-full tx-sm p-5 border border-primary-tetha rounded-xl font-medium text-primary flex items-center justify-between">
+                        <img src="/img/img-20.png" class="ml-2 max-h-[32px]" />
+                        خرید از طریق وب‌گیفت
+                        <GenericIcon name="left" class="text-xs text-primary-beta mr-2" />
+                    </NuxtLink>
+                </li>
+            </ul>
+
+            <p class="tx-xs text-primary text-justify mb-10">
+                گیفت کارت‌های اپل، هدیه‌ای محبوب و جذاب برای علاقه مندان محصولات و خدمات این شرکت هستند. اما اگر قصد خرید
+                گیفت کارت اپل را دارید، ممکن است با انواع مختلفی از گیفت کارت اپل مواجه شوید که دو نوع رایج آن گیفت کارت‌های
+                آمریکا و انگلیس است. اگر نمی‌دانید که فرق گیفت کارت اپل آمریکا و انگلیس چیست، با ما در این مطلب از وب سایت
+                تکنوسان مگ همراه باشید تا در این زمینه اطلاعات جامع و کاملی را به شما ارائه دهیم.
+            </p>
+
+
+            <div class="flex items-start">
+                <div class="w-1/2">
+                    <div class="flex items-center tx-xs text-success font-medium mb-3">
+                        <GenericIcon class="ml-2.5 text-2xl" name="dashboard" :pathCount="2" />
+                        نکات مثبت
+                    </div>
+                    <ul class="max-w-[340px] mb-10 mr-3 border-r-2 border-r-primary-tetha">
+                        <GenericLiSecondary class="mb-4 last:mb-0" v-for="(item, index) in points1" :key="index"
+                            :number="index + 1" :title="item.title" :listStyle="item.listStyle" />
+                    </ul>
+                </div>
+                <div class="w-1/2">
+                    <div class="flex items-center tx-xs text-danger font-medium mb-3">
+                        <GenericIcon class="ml-2.5 text-2xl" name="dashboard" :pathCount="2" />
+                        نکات منفی
+                    </div>
+                    <ul class="max-w-[340px] mb-10 mr-3 border-r-2 border-r-primary-tetha">
+                        <GenericLiSecondary listStyleColor="danger" class="mb-4 last:mb-0" v-for="(item, index) in points2"
+                            :key="index" :number="index + 1" :title="item.title" :listStyle="item.listStyle" />
+                    </ul>
+                </div>
+            </div>
+
+
+            <p class="tx-xs text-primary text-justify mb-10">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+                است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.لورم
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع است.
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.لورم ایپسوم متن
+                ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع است. لورم
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.لورم ایپسوم متن
+                ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع است. لورم
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
+            </p>
+
+            <div class="flex items-center mb-5">
+                <GenericIcon name="shield_chcek" class="text-md text-success ml-2.5" />
+                <ul class="-m-[5px] flex items-center">
+                    <li class="p-[5px]">
+                        <GenericTag>
+                            اکشن
+                        </GenericTag>
+                    </li>
+                    <li class="p-[5px]">
+                        <GenericTag>
+                            رانندگی
+                        </GenericTag>
+                    </li>
+                    <li class="p-[5px]">
+                        <GenericTag>
+                            مبارزه‌ای
+                        </GenericTag>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center mb-10">
+                <GenericIcon name="aparat" class="text-md text-success ml-2.5" />
+                <ul class="-m-[5px] flex items-center">
+                    <li class="p-[5px]">
+                        <GenericTag>
+                            Playstore.com
+                        </GenericTag>
+                    </li>
+                </ul>
+            </div>
+
+            <SectionsBlogSingleMainComment class="pb-10 border-b-public-section mb-[130px]" />
+
+
+            <div>
+                <div class="flex items-center pb-6 mb-6 border-b-public-section">
+                    <GenericHeaderSectionSecondary class="!mb-0" title="نظرات کاربران (۲۳ نظر)" />
+                    <GenericBtn iconName="dark-mode" gradient size="sm" class="!px-2.5 mr-auto">ثبت نظر</GenericBtn>
+                </div>
+
+                <div v-for="(comment, index) in comments" :key="index">
+                    <AppSingleContentMainOverviewComment isReply :name="comment.name" :subtitle="comment.subtitle"
+                        :text="comment.text" :img="comment.img" :rate="comment.rate" :time="comment.time"
+                        :replies="comment.replies" :likes="comment.likes" />
+                </div>
+
+                <GenericBtn class="mx-auto px-4" v-if="!showMore" @click="showMore = !showMore" outline lightness
+                    iconLeftSide iconName="down" rounded>
+                    مشاهده بیشتر
+                </GenericBtn>
+                <GenericBtn class="mx-auto px-4" v-if="showMore" @click="showMore = !showMore" outline lightness
+                    iconLeftSide iconName="up" rounded>
+                    مشاهده کمتر
+                </GenericBtn>
+            </div>
         </div>
     </div>
 </template>

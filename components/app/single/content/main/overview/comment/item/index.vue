@@ -40,6 +40,10 @@ let { name,isSuggest, effectiveReply, text, subtitle, img, time, likes, isRoidin
     isReply: {
         type: Boolean,
         default: false
+    },
+    border:{
+        type:Boolean,
+        default:false
     }
 })
 
@@ -58,7 +62,7 @@ function suggestTheme() {
 }
 </script>
 <template>
-    <div class="pr-[30px] border-r-2 border-r-primary-tetha pb-2.5">
+    <div :class="{'pr-[30px] border-r-2 border-r-primary-tetha ':border}" class="pb-2.5">
         <div v-if="!isRoidinoComment" class="tx-xs text-primary font-medium mb-2.5 flex items-center">
             <img :src="img" class="rounded-full w-10 h-10 ml-2.5" alt="">
             <span class="ml-3">

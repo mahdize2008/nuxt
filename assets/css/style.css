@@ -41,8 +41,11 @@
         --color-danger: 249 75 75;
         --color-danger-alpha: 255 237 237;
         
-        
+        /* NATURAL */
         --color-natural: 249 249 255;
+        
+        /* NATURAL */
+        --color-dark: 55 61 63;
     }
 
     button{
