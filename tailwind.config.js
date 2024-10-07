@@ -14,8 +14,7 @@ export default {
       'sm': '576px',
       'md': '768px',
       'lg': '992px',
-      'xl': '1200px',
-      '2xl': '1420px',
+      'xl': '1170px',
     },
     container: {
       center: true,
@@ -29,37 +28,23 @@ export default {
 
 
       primary: 'rgb(var(--color-primary) / <alpha-value>)',
-      'primary-alpha': 'rgb(var(--color-primary-alpha) / <alpha-value>)',
-      'primary-beta': 'rgb(var(--color-primary-beta) / <alpha-value>)',
-      'primary-gamma': 'rgb(var(--color-primary-gamma) / <alpha-value>)',
-      'primary-tetha': 'rgb(var(--color-primary-tetha) / <alpha-value>)',
-      'primary-landa': 'rgb(var(--color-primary-landa) / <alpha-value>)',
 
 
       'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
-      'secondary-alpha': 'rgb(var(--color-secondary-alpha) / <alpha-value>)',
-      'secondary-light': 'rgb(var(--color-secondary-light) / <alpha-value>)',
 
 
       success: 'rgb(var(--color-success) / <alpha-value>)',
-      'success-alpha': 'rgb(var(--color-success-alpha) / <alpha-value>)',
-      'success-beta': 'rgb(var(--color-success-beta) / <alpha-value>)',
-
-      warning: 'rgb(var(--color-warning) / <alpha-value>)',
-      'warning-alpha': 'rgb(var(--color-warning-alpha) / <alpha-value>)',
-
-      danger: 'rgb(var(--color-danger) / <alpha-value>)',
-      'danger-alpha': 'rgb(var(--color-danger-alpha) / <alpha-value>)',
       
       'natural': 'rgb(var(--color-natural) / <alpha-value>)',
-
-      'dark': 'rgb(var(--color-dark) / <alpha-value>)',
+      'natural-alpha': 'rgb(var(--color-natural-alpha) / <alpha-value>)',
+      'natural-beta': 'rgb(var(--color-natural-beta) / <alpha-value>)'
     },
     fontSize: {
       '4xs': '8px',
       '3xs': '10px',
       '2xs': '11px',
       xs: '12px',
+      'xs-plus': '13px',
       sm: '14px',
       base: '16px',
       md: '18px',

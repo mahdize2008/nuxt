@@ -1,61 +1,58 @@
-<script setup>
-let {label,error,errorMassage,disabled,placeholder}=defineProps({
-    label:{
-        type:String,
-        default:''
-    },
-    error:{
-        type:Boolean,
-        default:false
-    },
-    errorMassage:{
-        type:String,
-        default:''
-    },
-    disabled:{
-        type:Boolean,
-        default:false
-    },
-    placeholder:{
-        type:String,
-        default:''
-    }
+<script lang="ts" setup>
+let {placeholder,color,iconName,iconPathCount,hasOutline}=defineProps({
+  placeholder:{
+    type:String,
+    default:''
+  },
+  color:{
+    type:String,
+    default:'white'
+  },
+  iconName:{
+    type:String,
+    default:''
+  },
+  iconPathCount:{
+    type:Number,
+    default:0
+  },
+  hasOutline:{
+    type:Boolean,
+    default:false
+  }
 })
 
-let inputValue=''
+function setColor(){
+  return `input-wrapper-${color}`
+}
+
 </script>
+
 <template>
-    <div class="v-input-wrapper" :class="[{'v-input-wrapper-error' : error},{'disabled':disabled}]">
-        <label v-if="label" class="v-input-label">{{ label }}</label>
-        <div class="v-input-wrap">
-            <slot name="right-side"/>
-            <input type="text" :disabled="disabled" v-model="inputValue" :placeholder="placeholder" class="v-input tx-xs">
-            <slot name="left-side"/>
-        </div>
-        <div class="v-input-err tx-xs" v-if="error">
-            <GenericIcon name="dark-mode" class="ml-2" size="sm"/>
-            {{ errorMassage }}
-        </div>
-    </div>
+  <div class="input-wrapper w-[250px]" :class="[{'input-wrapper-outline':hasOutline},setColor()]">
+    <input type="text" class="input grow" :placeholder="placeholder">
+    <GenericBtn :color="color==='black' ? 'white' : 'transparent'" :btnText="color==='black'" :iconName="iconName" :iconPathCount="iconPathCount" :rounded="true" :square="true"/>
+  </div>
 </template>
 
-<style scoped>
-.v-input{
-    @apply grow outline-none h-[45px] block text-primary;
+<style>
+.input-wrapper{
+  @apply flex items-center bg-white rounded-sm overflow-hidden border-black
 }
-.v-input-wrap{
-    @apply px-3.5 w-full flex items-center rounded-xl border-2 border-primary-tetha;
+.input{
+  @apply bg-transparent h-10 outline-none px-4 text-xs-plus text-black
 }
-.v-input-wrapper.v-input-wrapper-error .v-input-wrap{
-    @apply !border-danger;
+
+.input-wrapper-black{
+  @apply bg-black border-white
 }
-.v-input-wrapper.disabled .v-input-wrap{
-    @apply bg-primary-tetha border-primary-tetha;
+.input-wrapper-black .input{
+  @apply text-white
 }
-.v-input-label{
-    @apply mb-1 block
+
+.input-wrapper.input-wrapper-outline{
+  @apply !bg-transparent border-2
 }
-.v-input-err{
-    @apply flex items-center text-danger mt-1.5
-}
+
+
 </style>

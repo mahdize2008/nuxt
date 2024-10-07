@@ -1,150 +1,149 @@
 <script setup>
-let { tag, iconName, size, rounded, square, gradient, theme, iconPathCount, lightness,outline, to , iconLeftSide } = defineProps({
-    tag: {
-        type: String,
-        default: 'button',
-        validator: (value) => {
-            return ['div', 'a', 'NuxtLink', 'button'].includes(value);
-        },
+let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, square ,btnText } = defineProps({
+  iconName: {
+    type: String,
+    default: "",
+  },
+  iconPathCount: {
+    type: Number,
+    default: 0,
+  },
+  color: {
+    type: String,
+    default: "",
+  },
+  size: {
+    type: String,
+    default: "md",
+    validator: (value) => {
+      return ["sm", "md", "lg"].includes(value);
     },
-    iconName: {
-        type: String,
-        default: ''
-    },
-    size: {
-        type: String,
-        default: 'base',
-        validator: (value) => {
-            return ['sm', 'base'].includes(value);
-        },
-    },
-    rounded: {
-        type: Boolean,
-        default: false
-    },
-    square: {
-        type: Boolean,
-        default: false
-    },
-    gradient: {
-        type: Boolean,
-        default: false
-    },
-    iconPathCount: {
-        type: Number,
-        default: 0
-    },
-    theme: {
-        type: String,
-        default: 'primary',
-        validator: (value) => {
-            return ['primary', 'success','dark'].includes(value);
-        },
-    },
-    lightness: {
-        type: Boolean,
-        default: false
-    },
-    outline: {
-        type: Boolean,
-        default: false
-    },
-    iconLeftSide: {
-        type: Boolean,
-        default: false
-    },
-    to: {
-        type: String,
-        default: ''
-    }
+  },
+  rounded: {
+    type: Boolean,
+    default: false,
+  },
+  lightness: {
+    type: Boolean,
+    default: false,
+  },
+  outline: {
+    type: Boolean,
+    default: false,
+  },
+  text: {
+    type: String,
+    default: "",
+  },
+  square: {
+    type: Boolean,
+    default: false,
+  },
+  btnText: {
+    type: Boolean,
+    default: false,
+  },
+});
 
-})
-function setMode() {
-    if (gradient) {
-        return 'btn-gradient'
-    }
-    else if (theme) {
-        return `btn-${theme}`;
-    }
+function setSize() {
+  return `btn-${size}`;
+}
+
+function setColor() {
+  if (color != '') {
+    return `btn-${color}`;
+  }
+  else {
+    return `btn-black`
+  }
 }
 </script>
+
 <template>
-    <component :is="tag" class="btn" :to="to"
-    :class="[`btn-${size}`, setMode(), { 'btn-rounded': rounded },{ 'btn-outline': outline }, { 'btn-lightness': lightness }, { 'btn-square': square }]">
-        <GenericIcon class="v-btn-icon" v-if="iconName&&!iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'ml-2': !square }"></GenericIcon>
-        <slot class="!tx-sm"/>
-        <GenericIcon class="v-btn-icon" v-if="iconName&&iconLeftSide" :pathCount="iconPathCount" :name="iconName" :class="{ 'mr-2': !square }"></GenericIcon>
-    </component>
+  <component is="nuxt-link" class="btn" :class="[{ 'btn-rounded': rounded },{ 'btn-lightness': lightness },{ 'btn-outline': outline },{ 'btn-square': square },{ 'btn-text': btnText },setSize(),setColor()]">
+    <GenericIcon :name="iconName" :iconPathCount="iconPathCount" v-if="iconName" :class="{'ml-4' : text.length}" />
+    {{ text }}
+  </component>
 </template>
 
-<style scoped>
-/* GENERIC-STYLE */
+<style>
 .btn {
-    @apply flex items-center justify-center bg-primary h-[45px] w-fit px-4 text-sm text-white font-medium cursor-pointer rounded-lg
+  @apply flex items-center justify-center border-black text-white bg-black border-2 rounded-md w-full px-12 h-10 text-base font-medium hover:!bg-opacity-20 hover:text-black transition-all cursor-pointer;
 }
-
-.v-btn-icon{
-    @apply text-md
+.btn i {
+  @apply text-base;
 }
-
-i.icon-left,
-i.icon-right,
-i.icon-up,
-i.icon-down
-{
-    @apply !text-3xs
+.btn-primary {
+  @apply bg-primary border-primary hover:text-primary;
 }
-
-/* BTN-SQUARE */
-.btn.btn-square {
-    @apply w-[45px] h-[45px] !px-0
+.btn-secondary {
+  @apply bg-secondary border-secondary hover:text-secondary
 }
-.btn.btn-sm.btn-square {
-    @apply w-[35px] h-[35px] !px-0
+.btn-success {
+  @apply bg-success border-success hover:text-success
 }
-
-
-/* BTN-COLOR */
-.btn.btn-success {
-    @apply bg-success text-white
+.btn-natural {
+  @apply bg-natural border-natural hover:text-natural
 }
-
-.btn.btn-dark {
-    @apply bg-black/50 text-white
+.btn-white {
+  @apply bg-white border-white hover:text-white text-black
+}
+.btn-transparent {
+  @apply bg-transparent border-transparent hover:text-primary text-black
 }
 
 
-.btn.btn-primary.btn-lightness:not(.btn-outline) {
-    @apply bg-primary-tetha text-primary
+.btn-sm{
+  @apply h-7 !text-xs font-medium
 }
-.btn.btn-success.btn-lightness:not(.btn-outline) {
-    @apply bg-success-alpha text-success
+.btn.btn-sm i {
+  @apply text-xs;
+}
+
+.btn-lg{
+  @apply h-[56px] text-xl
+}
+.btn.btn-lg i {
+  @apply text-xl;
+}
+
+.btn.btn-outline {
+  @apply bg-opacity-0 text-black hover:!bg-opacity-100 hover:!text-white
 }
 .btn.btn-outline.btn-lightness {
-    @apply !border-2 !bg-transparent border-solid
+  @apply border-opacity-20 hover:!border-opacity-100
+}
+.btn-square{
+  @apply !aspect-square !w-fit px-0
 }
 
-.btn.btn-primary.btn-lightness.btn-outline {
-    @apply !border-primary-tetha !text-primary
+.btn.btn-lightness {
+  @apply bg-opacity-20 border-opacity-0 text-black hover:!bg-opacity-100 hover:!text-white
+}
+.btn.btn-lightness.btn-primary,.btn.btn-outline.btn-primary {
+  @apply text-primary;
+}
+.btn.btn-lightness.btn-secondary,.btn.btn-outline.btn-secondary {
+  @apply text-secondary
+}
+.btn.btn-lightness.btn-success,.btn.btn-outline.btn-success {
+  @apply text-success
+}
+.btn.btn-lightness.btn-natural,.btn.btn-outline.btn-natural {
+  @apply text-natural
+}
+.btn.btn-lightness.btn-white,.btn.btn-outline.btn-white {
+  @apply text-white hover:!text-black
 }
 
-.btn.btn-success.btn-lightness.btn-outline {
-    @apply !border-success-alpha !text-success
-}
-
-.btn.btn-gradient {
-    @apply !bg-success-gradient !text-white
-}
-
-
-/* BTN-SIZE */
-.btn.btn-sm {
-    @apply !h-[35px]
-}
-
-
-/* BTN-ROUNDED */
 .btn.btn-rounded {
-    @apply rounded-full
+  @apply rounded-full
+}
+
+.btn.btn-text {
+  @apply !bg-transparent !border-none
+}
+.btn.btn-text.btn-white {
+  @apply !text-white hover:!text-primary
 }
 </style>

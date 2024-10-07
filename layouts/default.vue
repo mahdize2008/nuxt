@@ -1,5 +1,5 @@
 <template>
-        <LayoutsHeader/>
+    <LayoutHeader/>
     <slot/>
-    <LayoutsFooter/>
+    <LayoutFooter/>
 </template>

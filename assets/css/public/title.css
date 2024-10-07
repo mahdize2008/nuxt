@@ -1,0 +1,10 @@
+.title-public{
+    @apply text-2xl font-bold
+}
+.title-public-medium{
+    @apply text-lg font-normal
+}
+
+.title-public-white{
+    @apply text-white
+}

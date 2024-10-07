@@ -1,13 +1,15 @@
 @import "/assets/css/public/fonts.css";
+@import "/assets/css/public/title.css";
+@import "/assets/css/public/text.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply text-right font-["estedad"];
-        direction: rtl;
+    html,body {
+        @apply text-left font-["poppins"] bg-natural-beta;
+        direction: ltr;
     }
 
     /* VARIABLES COLOR IN LIGHT MODE */
@@ -16,36 +18,18 @@
         --color-black: 0 0 0;
     
         /* PRIMARY */
-        --color-primary: 53 57 94;
-        --color-primary-alpha: 127 130 161;
-        --color-primary-beta: 172 175 199;
-        --color-primary-gamma: 226 228 240;
-        --color-primary-tetha: 240 241 249;
-        --color-primary-landa: 34 37 67;
+        --color-primary: 219 68 68;
 
         /* SECONDARY */
-        --color-secondary: 58 148 255;
-        --color-secondary-alpha: 75 223 255;
-        --color-secondary-light: 230 248 255;
+        --color-secondary: 255 173 51;
 
         /* SUCCESS */
-        --color-success: 10 198 36;
-        --color-success-alpha: 218 247 222;
-        --color-success-beta: 160 219 34;
-
-        /* WARNING */
-        --color-warning: 255 214 0;
-        --color-warning-alpha: 255 122 0;
-
-        /* DANGER */
-        --color-danger: 249 75 75;
-        --color-danger-alpha: 255 237 237;
+        --color-success: 0 255 102;
         
         /* NATURAL */
-        --color-natural: 249 249 255;
-        
-        /* NATURAL */
-        --color-dark: 55 61 63;
+        --color-natural: 128 128 128;
+        --color-natural-alpha: 193 192 193;
+        --color-natural-beta: 229 229 229;
     }
 
     button{
@@ -64,9 +48,11 @@
     .mb-between-section{
         @apply mb-[70px]
     }
-
     .mt-between-section{
         @apply mt-[70px]
+    }
+    .my-between-section{
+        @apply my-[70px]
     }
 
 
