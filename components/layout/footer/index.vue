@@ -49,7 +49,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   My Account
                 </NuxtLink>
@@ -57,7 +57,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Login / Register
                 </NuxtLink>
@@ -65,7 +65,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Cart
                 </NuxtLink>
@@ -73,7 +73,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Wishlist
                 </NuxtLink>
@@ -81,7 +81,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Shop
                 </NuxtLink>
@@ -96,7 +96,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Privacy Policy
                 </NuxtLink>
@@ -104,7 +104,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Terms Of Use
                 </NuxtLink>
@@ -112,7 +112,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   FAQ
                 </NuxtLink>
@@ -120,7 +120,7 @@
               <li>
                 <NuxtLink
                   to="/"
-                  class="block py-1 text-public text-public-white hover:text-secondary transition-all mb-1"
+                  class="block py-1 text-public text-public-white hover:text-primary transition-all mb-1"
                 >
                   Contact
                 </NuxtLink>
@@ -161,7 +161,7 @@
           </div>
         </div>
     </div>
-    <div class="container py-4 justify-center flex items-center text-white/30 font-light text-base">
+    <div class="container py-4 justify-center flex items-center text-white/30 font-light text-sm">
         <GenericIcon name="avatar" class="mr-2"/>
         Copyright Rimel 2022. All right reserved
     </div>
