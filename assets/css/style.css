@@ -41,6 +41,10 @@
         text-decoration: none;
     }
 
+    input{
+        @apply outline-none
+    }
+
     /* GENERIC STYLE TX */
     .tx {
         @apply font-normal text-primary

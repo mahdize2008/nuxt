@@ -26,13 +26,19 @@ let selectItems = ["türkçe", "english", "فارسی"];
 
 <template>
   <div class="container my-between-section">
-    <h2 class="text-5xl text-primary font-bold w-full mb-4">readmap</h2>
+    <h2 class="text-5xl text-black font-bold w-full mb-4">readmap</h2>
     <SectionsGenericReadmap :items="readmapItems" />
   </div>
   <div class="container mb-between-section">
-    <h2 class="text-5xl text-primary font-bold w-full mb-4">select</h2>
+    <h2 class="text-5xl text-black font-bold w-full mb-4">select</h2>
     <div class="bg-black w-fit rounded-lg">
       <GenericSelect class="px-4" :items="selectItems" />
+    </div>
+  </div>
+  <div class="container mb-between-section">
+    <h2 class="text-5xl text-black font-bold w-full mb-4">countdown</h2>
+    <div class="bg-black w-fit rounded-lg">
+      <GenericCountdown :items="selectItems" />
     </div>
   </div>
   <div class="container mb-between-section">
