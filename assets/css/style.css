@@ -30,6 +30,7 @@
         --color-natural: 128 128 128;
         --color-natural-alpha: 193 192 193;
         --color-natural-beta: 229 229 229;
+        --color-natural-tetha: 137 137 137;
     }
 
     button{
@@ -46,24 +47,24 @@
     }
 
     .mb-between-section{
-        @apply mb-[70px]
+        @apply mb-14
     }
     .mt-between-section{
-        @apply mt-[70px]
+        @apply mt-14
     }
     .my-between-section{
-        @apply my-[70px]
+        @apply my-14
     }
 
 
     .py-between-section{
-        @apply py-[70px]
+        @apply py-14
     }
     .pb-between-section{
-        @apply pb-[70px]
+        @apply pb-14
     }
     .pt-between-section{
-        @apply pt-[70px]
+        @apply pt-14
     }
 
 

@@ -46,6 +46,7 @@ export default {
       xs: '12px',
       'xs-plus': '13px',
       sm: '14px',
+      'sm-plus': '15px',
       base: '16px',
       md: '18px',
       lg: '20px',

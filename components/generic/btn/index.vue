@@ -1,5 +1,5 @@
 <script setup>
-let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, square ,btnText } = defineProps({
+let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, square ,btnText ,tag } = defineProps({
   iconName: {
     type: String,
     default: "",
@@ -43,6 +43,14 @@ let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, 
     type: Boolean,
     default: false,
   },
+  iconEnd: {
+    type: Boolean,
+    default: false,
+  },
+  tag: {
+    type: String,
+    default: 'a',
+  },
 });
 
 function setSize() {
@@ -60,8 +68,8 @@ function setColor() {
 </script>
 
 <template>
-  <component is="nuxt-link" class="btn" :class="[{ 'btn-rounded': rounded },{ 'btn-lightness': lightness },{ 'btn-outline': outline },{ 'btn-square': square },{ 'btn-text': btnText },setSize(),setColor()]">
-    <GenericIcon :name="iconName" :iconPathCount="iconPathCount" v-if="iconName" :class="{'ml-4' : text.length}" />
+  <component :is="tag" class="btn" :class="[{ 'btn-rounded': rounded },{ 'btn-lightness': lightness },{ 'btn-outline': outline },{ 'btn-square': square },{ 'btn-text': btnText },setSize(),setColor()]">
+    <GenericIcon :name="iconName" :iconPathCount="iconPathCount" v-if="iconName" :class="[{'mr-3' : text.length&&!iconEnd},{'ml-3' : text.length&&iconEnd},{'!order-2':iconEnd}]" />
     {{ text }}
   </component>
 </template>
