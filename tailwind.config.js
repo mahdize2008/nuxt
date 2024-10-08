@@ -38,7 +38,13 @@ export default {
       'natural': 'rgb(var(--color-natural) / <alpha-value>)',
       'natural-alpha': 'rgb(var(--color-natural-alpha) / <alpha-value>)',
       'natural-beta': 'rgb(var(--color-natural-beta) / <alpha-value>)',
-      'natural-tetha': 'rgb(var(--color-natural-tetha) / <alpha-value>)'
+      'natural-tetha': 'rgb(var(--color-natural-tetha) / <alpha-value>)',
+      
+      
+      'light': 'rgb(var(--color-light) / <alpha-value>)',
+
+
+      'dark': 'rgb(var(--color-dark) / <alpha-value>)'
     },
     fontSize: {
       '4xs': '8px',

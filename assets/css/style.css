@@ -31,6 +31,12 @@
         --color-natural-alpha: 193 192 193;
         --color-natural-beta: 229 229 229;
         --color-natural-tetha: 137 137 137;
+        
+        /* DARK */
+        --color-dark: 116 116 116;
+        
+        /* LIGHT */
+        --color-light: 245 245 245;
     }
 
     button{

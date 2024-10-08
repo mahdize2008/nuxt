@@ -47,7 +47,7 @@ function setColor(){
 
 <style>
 .badge{
-    @apply px-3 py-2 leading-none rounded-sm text-xs text-white uppercase bg-primary
+    @apply px-3 py-2 leading-none rounded-sm text-xs text-white uppercase bg-primary w-fit
 }
 .badge i{
     @apply text-lg

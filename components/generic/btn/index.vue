@@ -94,7 +94,7 @@ function setColor() {
   @apply bg-natural border-natural hover:text-natural
 }
 .btn-white {
-  @apply bg-white border-white hover:text-white text-black
+  @apply bg-white border-white hover:text-white hover:bg-primary/100 hover:border-primary text-black
 }
 .btn-transparent {
   @apply bg-transparent border-transparent hover:text-primary text-black
@@ -102,10 +102,10 @@ function setColor() {
 
 
 .btn-sm{
-  @apply h-7 !text-xs font-medium
+  @apply h-8 !text-xs font-medium
 }
 .btn.btn-sm i {
-  @apply text-xs;
+  @apply text-sm-plus;
 }
 
 .btn-lg{

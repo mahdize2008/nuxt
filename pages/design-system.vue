@@ -52,6 +52,27 @@ let selectItems = ["türkçe", "english", "فارسی"];
       <SectionsGenericTimer blackMode />
     </div>
   </div>
+
+
+  <div class="container mb-between-section">
+    <h2 class="text-10xl text-black font-bold w-full text-center">product</h2>
+    <div class="mb-8">
+      <h2 class="text-5xl text-primary font-bold w-full mb-4">public</h2>
+      <div class="flex items-start">
+        <GenericProduct class="w-1/5 mr-3 last:mr-0" :price="960" :previousPrice="1160" title="Gucci duffle bag" isNew hasDeletBtn discount="-35%" :rating="4" :voter="65" hasLikeBtn hasAddBtn hasViewBtn :colors="['primary','black']"/>
+        <GenericProduct class="w-1/5 mr-3 last:mr-0" :price="960" :previousPrice="1160" title="Gucci duffle bag" isNew :rating="4" :voter="65" hasLikeBtn hasAddBtn hasViewBtn :colors="['primary','black']"/>
+        <GenericProduct class="w-1/5 mr-3 last:mr-0" :price="960" title="Gucci duffle bag" discount="-35%" :rating="4" :voter="65" hasLikeBtn hasAddBtn hasViewBtn :colors="['primary','black']"/>
+        <GenericProduct class="w-1/5 mr-3 last:mr-0" :price="960" :previousPrice="1160" title="Gucci duffle bag" isNew :rating="4" :voter="65" hasViewBtn :hasAddBtn="false" :hasLikeBtn="false" :colors="['primary','black']"/>
+        <GenericProduct class="w-1/5 mr-3 last:mr-0" :price="960" :previousPrice="1160" title="Gucci duffle bag" discount="-35%" :rating="4" :voter="65" hasLikeBtn hasAddBtn :hasViewBtn="false"/>
+      </div>
+    </div>
+    <div class="mb-4">
+      <h2 class="text-5xl text-black font-bold w-full mb-4">black</h2>
+      <SectionsGenericTimer blackMode />
+    </div>
+  </div>
+
+
   <div class="container mb-between-section">
     <h2 class="text-10xl text-black font-bold w-full text-center">btn</h2>
     <div class="flex items-center flex-wrap mb-8 last:mb-0">
