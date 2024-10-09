@@ -1,5 +1,5 @@
 <script setup>
-let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, square ,btnText ,tag } = defineProps({
+let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, square ,btnText ,tag,link } = defineProps({
   iconName: {
     type: String,
     default: "",
@@ -51,6 +51,9 @@ let {iconName , iconPathCount , color, size, rounded, lightness, outline, text, 
     type: String,
     default: 'a',
   },
+  link: {
+    type: String,
+  }
 });
 
 function setSize() {
@@ -68,7 +71,7 @@ function setColor() {
 </script>
 
 <template>
-  <component :is="tag" class="btn" :class="[{ 'btn-rounded': rounded },{ 'btn-lightness': lightness },{ 'btn-outline': outline },{ 'btn-square': square },{ 'btn-text': btnText },setSize(),setColor()]">
+  <component :is="tag" :href="link" class="btn" :class="[{ 'btn-rounded': rounded },{ 'btn-lightness': lightness },{ 'btn-outline': outline },{ 'btn-square': square },{ 'btn-text': btnText },setSize(),setColor()]">
     <GenericIcon :name="iconName" :iconPathCount="iconPathCount" v-if="iconName" :class="[{'mr-3' : text.length&&!iconEnd},{'ml-3' : text.length&&iconEnd},{'!order-2':iconEnd}]" />
     {{ text }}
   </component>
@@ -76,7 +79,7 @@ function setColor() {
 
 <style>
 .btn {
-  @apply flex items-center justify-center border-black text-white bg-black border-2 rounded-md w-full px-12 h-10 text-base font-medium hover:!bg-opacity-20 hover:text-black transition-all cursor-pointer;
+  @apply w-fit flex items-center justify-center border-black text-white bg-black border-2 rounded-md px-12 h-10 text-base font-medium hover:!bg-opacity-20 hover:text-black transition-all cursor-pointer;
 }
 .btn i {
   @apply text-base;
@@ -109,7 +112,7 @@ function setColor() {
 }
 
 .btn-lg{
-  @apply h-[56px] text-xl
+  @apply h-[56px] text-base
 }
 .btn.btn-lg i {
   @apply text-xl;
@@ -141,7 +144,7 @@ function setColor() {
   @apply text-natural
 }
 .btn.btn-lightness.btn-white,.btn.btn-outline.btn-white {
-  @apply text-white hover:!text-black
+  @apply text-white hover:!text-black hover:bg-white hover:border-white
 }
 
 .btn.btn-rounded {

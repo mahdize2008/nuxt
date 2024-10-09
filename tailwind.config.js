@@ -44,7 +44,8 @@ export default {
       'light': 'rgb(var(--color-light) / <alpha-value>)',
 
 
-      'dark': 'rgb(var(--color-dark) / <alpha-value>)'
+      'dark': 'rgb(var(--color-dark) / <alpha-value>)',
+      'dark-alpha': 'rgb(var(--color-dark-alpha) / <alpha-value>)'
     },
     fontSize: {
       '4xs': '8px',

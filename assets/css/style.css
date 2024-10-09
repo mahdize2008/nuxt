@@ -8,7 +8,7 @@
 
 @layer base {
     html,body {
-        @apply text-left font-["poppins"] bg-natural-beta;
+        @apply text-left font-["poppins"] bg-white;
         direction: ltr;
     }
 
@@ -34,6 +34,7 @@
         
         /* DARK */
         --color-dark: 116 116 116;
+        --color-dark-alpha: 175 175 175;
         
         /* LIGHT */
         --color-light: 245 245 245;

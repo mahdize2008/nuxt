@@ -1,5 +1,5 @@
 <script setup>
-let { price, previousPrice, title, isNew, hasDeletBtn, discount, rating, voter, hasLikeBtn, hasViewBtn, colors,hasAddBtn} = defineProps({
+let { price, previousPrice, title, isNew, hasDeletBtn, discount, rating, voter, hasLikeBtn, hasViewBtn, colors,hasAddBtn,imgSrc} = defineProps({
   price: {
     type: Number,
   },
@@ -43,6 +43,9 @@ let { price, previousPrice, title, isNew, hasDeletBtn, discount, rating, voter, 
   colors: {
     type: Array,
     default: [],
+  },
+  imgSrc: {
+    type: String
   },
 });
 </script>

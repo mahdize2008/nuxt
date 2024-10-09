@@ -4,6 +4,13 @@
 .title-public-medium{
     @apply text-lg font-normal
 }
+.title-public-large{
+    @apply text-8xl font-semibold
+}
+
+.title-semibold{
+    @apply font-semibold
+}
 
 .title-public-white{
     @apply text-white
