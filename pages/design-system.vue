@@ -86,6 +86,20 @@ let selectItems = ["türkçe", "english", "فارسی"];
       </div>
     </div>
 
+
+    <div class="container mb-between-section">
+      <h2 class="text-10xl text-black font-bold w-full text-center">
+        category
+      </h2>
+      <div class="mb-4">
+        <GenericCategory
+          iconName="headphones"
+          title="HeadPhones"
+          link="/"
+        />
+      </div>
+    </div>
+
     <div class="container mb-between-section">
       <h2 class="text-10xl text-black font-bold w-full text-center">product</h2>
       <div>
